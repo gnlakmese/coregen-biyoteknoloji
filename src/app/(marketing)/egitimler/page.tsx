@@ -162,7 +162,7 @@ export default function EgitimlerPage() {
                     </div>
                   </div>
 
-                  {/* Butonlar: Shopier Satın Al ve Detay */}
+                  {/* Butonlar: Detay ve Shopier Satın Al */}
                   <div className="grid grid-cols-2 gap-2">
                     <Link 
                       href={`/egitimler/${egitim.id}`} 
