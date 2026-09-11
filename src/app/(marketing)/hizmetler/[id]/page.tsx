@@ -179,7 +179,6 @@ export default function HizmetDetayPage() {
                 </div>
               </div>
 
-              {/* Detay içi ek görsel alanı */}
               {!imgError && (
                 <div className="relative h-64 md:h-72 rounded-3xl overflow-hidden shadow-md border border-slate-100 bg-slate-100">
                   <Image 
@@ -249,4 +248,126 @@ export default function HizmetDetayPage() {
                   <ol className="space-y-4 border-l-2 border-pink-200 ml-4 pl-6">
                     {hizmet.workflowSteps.map((step, idx) => (
                       <li key={idx} className="relative text-slate-700 font-medium text-sm">
-                        <span className="absolute -left-[35px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-pink-100 text-pink-700 text-
+                        <span className="absolute -left-[35px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-pink-100 text-pink-700 text-[10px] font-bold border-2 border-white shadow-sm">
+                          {idx + 1}
+                        </span>
+                        {step}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </section>
+            )}
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {hizmet.requiredInfo && hizmet.requiredInfo.length > 0 && (
+                <section>
+                  <h3 className="text-lg font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">Müşteriden İstenen Bilgiler</h3>
+                  <ul className="space-y-2">
+                    {hizmet.requiredInfo.map((info, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-400" /> {info}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {hizmet.qualityControl && hizmet.qualityControl.length > 0 && (
+                <section>
+                  <h3 className="text-lg font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">Kalite Kontrol</h3>
+                  <ul className="space-y-2">
+                    {hizmet.qualityControl.map((qc, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
+                        <CheckCircle2 className="w-4 h-4 text-blue-500" /> {qc}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+            </div>
+
+            <section className="pt-6 border-t border-slate-100">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">→ Neden CoreGen?</h3>
+              {hizmet.whyCoreGen ? (
+                 <p className="text-slate-700 bg-pink-50 p-6 rounded-2xl border border-pink-100 text-sm leading-relaxed mb-6 shadow-sm">
+                   {hizmet.whyCoreGen}
+                 </p>
+              ) : (
+                 <p className="text-slate-700 bg-pink-50 p-6 rounded-2xl border border-pink-100 text-sm leading-relaxed mb-6 shadow-sm">
+                   Proje bazlı çalışma anlayışımızla akademik araştırmacıların vizyonunu, teknik laboratuvar deneyimimizle birleştiriyoruz.
+                 </p>
+              )}
+            </section>
+
+            {hizmet.faqs && hizmet.faqs.length > 0 && (
+              <section className="pt-6 border-t border-slate-100">
+                <h3 className="text-xl font-bold text-slate-900 mb-6">→ Sıkça Sorulan Sorular</h3>
+                <div className="space-y-3">
+                  {hizmet.faqs.map((faq, idx) => (
+                    <div key={idx} className="border border-slate-200 rounded-xl overflow-hidden bg-white">
+                      <button 
+                        onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                        className="w-full text-left px-5 py-4 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition-colors"
+                      >
+                        <span className="text-sm">{faq.question}</span>
+                        <ChevronDown className={`w-4 h-4 text-pink-500 transition-transform ${openFaq === idx ? "rotate-180" : ""}`} />
+                      </button>
+                      {openFaq === idx && (
+                        <div className="px-5 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3 bg-slate-50/50">
+                          {faq.answer}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <section className="bg-pink-50 rounded-[2rem] p-8 md:p-12 border border-pink-100 text-center shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">Projeniz İçin Teklif Alın</h3>
+              <p className="text-slate-600 mb-8 max-w-xl mx-auto">
+                Çalışmanızın amacı, numune türü ve örnek sayısı gibi temel bilgileri bizimle paylaşarak araştırma projenize özel teklif alabilirsiniz.
+              </p>
+              
+              {!showForm && (
+                <div className="flex justify-center gap-3">
+                  <button 
+                    onClick={scrollToForm}
+                    className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-xl font-bold text-sm transition-colors flex items-center justify-center gap-2 shadow-lg shadow-pink-600/30"
+                  >
+                    <ClipboardList className="w-5 h-5" />
+                    Bu Hizmet İçin Teklif Alın
+                  </button>
+                </div>
+              )}
+            </section>
+
+            <div id="quote-form-section">
+              {showForm && (
+                <section className="animate-in fade-in slide-in-from-bottom-8 duration-500">
+                  <ServiceDetailForm serviceSlug={hizmet.slug} serviceName={hizmet.name} />
+                </section>
+              )}
+            </div>
+
+            {related && related.length > 0 && (
+               <section className="pt-12 border-t border-slate-100">
+                 <h3 className="text-xl font-bold text-slate-900 mb-6">İlgili Diğer Hizmetlerimiz</h3>
+                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                   {related.map((rel: any) => (
+                     <Link key={rel.slug} href={`/hizmetler/${rel.slug}`} className="group p-4 bg-white rounded-2xl border border-slate-200 hover:border-pink-300 hover:shadow-md transition-all flex flex-col justify-between h-full">
+                       <h4 className="font-bold text-slate-800 text-sm group-hover:text-pink-600 transition-colors mb-2">{rel.name}</h4>
+                       <span className="text-xs font-bold text-pink-500 flex items-center gap-1">İncele <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform"/></span>
+                     </Link>
+                   ))}
+                 </div>
+               </section>
+            )}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
