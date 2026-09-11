@@ -35,7 +35,7 @@ export async function GET() {
         th, td { border: 1px solid #cbd5e1; padding: 6px; text-align: left; }
         th { background-color: #f1f5f9; color: #0f172a; }
         
-        .footer-note { text-align: center; margin-top: 40px; font-size: 11px; color: #64748b; border-top: 1px solid #e2e8f0; pt-4; }
+        .footer-note { text-align: center; margin-top: 40px; font-size: 11px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 15px; }
     </style>
 </head>
 <body>
@@ -80,10 +80,10 @@ export async function GET() {
         </tbody>
     </table>
 
-    <h2>9. Numune Etiketleme</h2>
+    <h2>5. Numune Etiketleme</h2>
     <p>Her tüpü benzersiz bir numune kodu (Örn: CG-001) ile etiketleyin. Tüp üzerine kesinlikle kişisel sağlık bilgisi yazmayın ve kodların formla %100 uyumlu olmasını sağlayın.</p>
 
-    <h2>15. Sık Yapılan Hatalar</h2>
+    <h2>6. Sık Yapılan Hatalar</h2>
     <ol>
         <li>Etiketsiz numune göndermek.</li>
         <li>Kodların formla eşleşmemesi.</li>
@@ -104,29 +104,4 @@ export async function GET() {
       "Content-Disposition": 'attachment; filename="CoreGen-Numune-Gonderim-Rehberi.html"',
     },
   });
-}
-import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-
-export async function GET() {
-  try {
-    // public klasörünün içindeki dosya yolu
-    const filePath = path.join(process.cwd(), "public", "numune-gonderim-rehberi.pdf");
-    
-    if (!fs.existsSync(filePath)) {
-      return new NextResponse("Dosya bulunamadı", { status: 404 });
-    }
-
-    const fileBuffer = fs.readFileSync(filePath);
-
-    return new NextResponse(fileBuffer, {
-      headers: {
-        "Content-Type": "application/pdf",
-        "Content-Disposition": 'attachment; filename="CoreGen-Numune-Gonderim-Rehberi.pdf"',
-      },
-    });
-  } catch (error) {
-    return new NextResponse("İndirme hatası", { status: 500 });
-  }
 }
