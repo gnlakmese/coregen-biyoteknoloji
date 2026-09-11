@@ -50,6 +50,7 @@ Biyoloji, moleküler biyoloji ve genetik, biyoteknoloji, biyomühendislik, tıp,
     instructorName: "Gönül Akmeşe",
     price: "5.605 ₺",
     features: ["10 Saat (5-6 Eylül)", "Online (Canlı) Eğitim", "Başlangıç / Orta Seviye", "Katılım Sertifikası"],
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49254483",
   },
   "coregen-genetik-akademisi": {
     title: "CoreGen Genetik Akademisi: Sertifikalı Genetik Eğitim Serisi",
@@ -129,6 +130,7 @@ Bilimi Öğren • Kendini Geliştir • Yetkinliğini Belgele
     instructorName: "Gönül Akmeşe",
     price: "1.500 ₺",
     features: ["Online Canlı Eğitim", "Her modül 3 saat teorik + 2 saat uygulama", "2 Ay kayıt erişimi", "Genetik Akademisi Uzmanlık Sertifikası (10+ Eğitim)"],
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49388038",
   },
   "sitogenetik": {
     title: "Sitogenetik ve Sanal Uygulamalı Karyotipleme Eğitimi",
@@ -220,6 +222,7 @@ info@coregenbiyoteknoloji.com`,
     instructorName: "Gönül Akmeşe",
     price: "2.553 ₺",
     features: ["Video Eğitim (4-5 Saat)", "Sanal karyotipleme + vaka örnekleri", "2 ay erişim süresi", "Katılım sertifikası"],
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49958492",
   },
   "biyoinformatik-101": {
     title: "Biyoinformatik 101: Temel Biyoinformatik ve Veri Tabanları",
@@ -234,6 +237,7 @@ info@coregenbiyoteknoloji.com`,
     instructorName: "Gönül Akmeşe",
     price: "2.956 ₺",
     features: ["Kapsamlı Video Eğitim", "Biyolojik Veritabanları Pratiği", "Evrimsel Analiz Temelleri", "Sertifikalı"],
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/46890607",
   },
   "uygulamali-primer-tasarimi": {
     title: "Uygulamalı Primer Tasarımı Eğitimi",
@@ -252,6 +256,7 @@ info@coregenbiyoteknoloji.com`,
     instructorName: "Gönül Akmeşe",
     price: "1.928 ₺",
     features: ["Digital Araç Kullanımı", "Uygulama Örneği", "Sertifika Projesi", "Ömür Boyu Erişim"],
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/46890580",
   },
   "biyoinformatik-bootcamp": {
     title: "Sıfırdan Biyoinformatik Bootcamp",
@@ -320,6 +325,7 @@ Eğer siz de biyoinformatiğe sağlam bir başlangıç yapmak istiyorsanız, ara
     instructorName: "Gönül Akmeşe",
     price: "Ücretsiz / 990 ₺",
     features: ["2 Gün / Toplam 10 Saat", "Canlı Online Eğitim", "1 Yıl Kayıt Erişimi (Premium)", "Eğitim Materyalleri"],
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/48968346",
   }
 };
 
@@ -328,10 +334,6 @@ export default function EgitimDetayPage() {
   const id = params.id as string;
   
   const egitim = egitimDetaylari[id as keyof typeof egitimDetaylari] || egitimDetaylari["metagenomik"];
-
-  const handleAddToCart = () => {
-    alert("Eğitim sepete eklendi! PayTR ödeme sayfasına yönlendiriliyor...");
-  };
 
   return (
     <div className="min-h-screen bg-slate-50 pt-28 pb-24 text-slate-800">
@@ -406,11 +408,16 @@ export default function EgitimDetayPage() {
               </div>
 
               <div className="space-y-4">
-                <button onClick={handleAddToCart} className="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-2xl font-bold text-sm transition-all shadow-xl shadow-slate-900/10 flex items-center justify-center gap-2">
+                <a 
+                  href={egitim.shopierUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-pink-600 hover:bg-pink-700 text-white py-4 rounded-2xl font-bold text-sm transition-all shadow-xl shadow-pink-600/20 flex items-center justify-center gap-2"
+                >
                   <ShoppingCart className="w-5 h-5" /> Sepete Ekle / Satın Al
-                </button>
+                </a>
                 <div className="flex items-center justify-center gap-2 text-xs text-slate-400 pb-2">
-                  <CreditCard className="w-4 h-4" /> 256-bit SSL & PayTR Güvencesiyle
+                  <CreditCard className="w-4 h-4" /> 256-bit SSL & Shopier Güvencesiyle
                 </div>
                 <a href="https://wa.me/905522207270?text=Merhaba,%20eğitimleriniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" className="w-full bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/20 py-4 rounded-2xl font-bold text-sm transition-all flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5" /> WhatsApp'tan Bilgi Al
