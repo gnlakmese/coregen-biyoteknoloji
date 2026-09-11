@@ -17,7 +17,7 @@ const mockEgitimler = [
     id: "metagenomik",
     title: "Metagenomik Analizlere Giriş Eğitimi",
     description: "Mikrobiyom dünyasını keşfet, verini anlamlı hale getir. 16S rRNA ve Shotgun metagenomik analiz süreçlerini sıfırdan öğrenin.",
-    price: "5.605 ₺",
+    price: "5.600 ₺",
     image: "/images/metagenomik analizler .png", 
     isDigital: false,
     shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49254483",
