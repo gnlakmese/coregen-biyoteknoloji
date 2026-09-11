@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Users, ArrowRight, BookOpen, AlertCircle, PlayCircle, Radio, Megaphone } from "lucide-react";
+import { Users, ArrowRight, BookOpen, AlertCircle, PlayCircle, Radio, Megaphone, ShoppingCart } from "lucide-react";
 
 // Admin panelinden gelecek duyuruların listesi
 const mockDuyurular = [
@@ -20,6 +20,7 @@ const mockEgitimler = [
     price: "5.605 ₺",
     image: "/images/metagenomik analizler .png", 
     isDigital: false,
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49254483",
   },
   {
     id: "coregen-genetik-akademisi",
@@ -28,6 +29,7 @@ const mockEgitimler = [
     price: "1.500 ₺ / Ay",
     image: "/images/coregen genetik akademisi.png",
     isDigital: false,
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49388038",
   },
   {
     id: "sitogenetik",
@@ -36,6 +38,7 @@ const mockEgitimler = [
     price: "2.553 ₺",
     image: "/images/sitogenetik sanal uygulama .png",
     isDigital: true,
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/49958492",
   },
   {
     id: "biyoinformatik-101",
@@ -44,6 +47,7 @@ const mockEgitimler = [
     price: "2.956 ₺",
     image: "/images/biyoinformatik 101.jpeg",
     isDigital: true,
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/46890607",
   },
   {
     id: "uygulamali-primer-tasarimi",
@@ -52,6 +56,7 @@ const mockEgitimler = [
     price: "1.928 ₺",
     image: "/images/primer tasarımı eğitimi.jpeg",
     isDigital: true,
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/46890580",
   },
   {
     id: "biyoinformatik-bootcamp",
@@ -60,6 +65,7 @@ const mockEgitimler = [
     price: "Ücretsiz / 990 ₺",
     image: "/images/biyoinformatik bootcamp .png",
     isDigital: false,
+    shopierUrl: "https://www.shopier.com/CoreGenBiyoteknoloji/48968346",
   }
 ];
 
@@ -148,20 +154,33 @@ export default function EgitimlerPage() {
                   {egitim.description}
                 </p>
                 
-                <div className="mt-auto space-y-4">
-                  <div className="flex items-center justify-center text-xs border-t border-slate-100 pt-4">
-                    <div className="flex items-center gap-1.5 bg-red-50 text-red-600 px-4 py-1.5 rounded-full font-bold w-full justify-center">
-                      <AlertCircle className="w-4 h-4 animate-pulse" />
+                <div className="mt-auto space-y-3">
+                  <div className="flex items-center justify-center text-xs border-t border-slate-100 pt-3">
+                    <div className="flex items-center gap-1.5 text-red-600 px-3 py-1 rounded-full font-bold text-[11px]">
+                      <AlertCircle className="w-3.5 h-3.5 animate-pulse" />
                       Kontenjan Dolmak Üzere!
                     </div>
                   </div>
 
-                  <Link 
-                    href={`/egitimler/${egitim.id}`} 
-                    className="w-full inline-flex items-center justify-center gap-2 bg-slate-50 hover:bg-slate-900 text-slate-700 hover:text-white py-3.5 rounded-2xl font-bold text-sm transition-colors border border-slate-200 hover:border-slate-900"
-                  >
-                    Detayları İncele <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  {/* Butonlar: Shopier Satın Al ve Detay */}
+                  <div className="grid grid-cols-2 gap-2">
+                    <Link 
+                      href={`/egitimler/${egitim.id}`} 
+                      className="inline-flex items-center justify-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-700 py-3 px-3 rounded-2xl font-bold text-xs transition-colors border border-slate-200"
+                    >
+                      Detaylar <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+
+                    <a 
+                      href={egitim.shopierUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-1 bg-pink-600 hover:bg-pink-700 text-white py-3 px-3 rounded-2xl font-bold text-xs transition-colors shadow-sm shadow-pink-500/20"
+                    >
+                      <ShoppingCart className="w-3.5 h-3.5" /> Satın Al
+                    </a>
+                  </div>
+
                 </div>
               </div>
             </div>
