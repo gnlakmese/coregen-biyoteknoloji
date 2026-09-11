@@ -47,6 +47,8 @@ enum AdminRole {
   SUPER_ADMIN
   EDITOR
   SUPPORT
+  ADMIN
+  PERSONEL
 }
 
 enum QuoteStatus {
@@ -66,23 +68,21 @@ enum ApplicationStatus {
 }
 
 // ============================================================================
-// ADMIN / KULLANICI
+// ADMIN / KULLANICI (BİRLEŞTİRİLMİŞ YAPI)
 // ============================================================================
 
-/// NextAuth.js entegrasyonu için hazır — şu an admin paneli
-/// ADMIN_EMAIL/ADMIN_PASSWORD ortam değişkenleriyle çalışıyor (geçici
-/// tek-kullanıcı çözümü). Bu tablo, gerçek çoklu-kullanıcı/rol geçişi
-/// yapıldığında kullanılacak.
 model User {
-  id           String    @id @default(cuid())
-  email        String    @unique
-  passwordHash String
-  name         String
-  role         AdminRole @default(EDITOR)
-  isActive     Boolean   @default(true)
+  id           String     @id @default(cuid())
+  email        String     @unique
+  passwordHash String?    // Eski uyumluluk için
+  password     String?    // Yeni eklenen personel/admin şifresi
+  name         String?
+  adSoyad      String?    // Personel / Ad Soyad alanı
+  role         AdminRole  @default(EDITOR)
+  isActive     Boolean    @default(true)
   lastLoginAt  DateTime?
-  createdAt    DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
 
   assignedQuotes Quote[]       @relation("AssignedAdmin")
   activityLogs   ActivityLog[]
@@ -189,7 +189,7 @@ model Service {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  quoteItems      QuoteItem[]
+  quoteItems       QuoteItem[]
   relatedBlogPosts BlogPost[]  @relation("BlogRelatedServices")
 
   @@index([categoryId])
@@ -198,7 +198,7 @@ model Service {
 }
 
 model ServiceFaq {
-  id        String  @id @default(cuid())
+  id        String @id @default(cuid())
   serviceId String
   service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
   question  String
@@ -223,25 +223,25 @@ model BlogCategory {
 }
 
 model BlogPost {
-  id                     String        @id @default(cuid())
-  slug                   String        @unique
-  title                  String
-  excerpt                String
-  readingTimeMinutes     Int
+  id                    String        @id @default(cuid())
+  slug                  String        @unique
+  title                 String
+  excerpt               String
+  readingTimeMinutes    Int
   /// { heading: string, paragraphs: string[] }[]
-  sections               Json
+  sections              Json
   /// { title: string, headers: string[], rows: string[][] } | null
-  table                  Json?
-  infographicSuggestion  String
-  sources                String[]
-  status                 ContentStatus @default(PUBLISHED)
-  publishedAt            DateTime
+  table                 Json?
+  infographicSuggestion String
+  sources               String[]
+  status                ContentStatus @default(PUBLISHED)
+  publishedAt           DateTime
 
   categoryId String
   category   BlogCategory @relation(fields: [categoryId], references: [id])
 
-  faqs             BlogFaq[]
-  relatedServices  Service[] @relation("BlogRelatedServices")
+  faqs            BlogFaq[]
+  relatedServices Service[] @relation("BlogRelatedServices")
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -349,7 +349,7 @@ model JobPosting {
 }
 
 model Applicant {
-  id           String  @id @default(cuid())
+  id           String      @id @default(cuid())
   jobPostingId String?
   jobPosting   JobPosting? @relation(fields: [jobPostingId], references: [id])
 
@@ -361,7 +361,7 @@ model Applicant {
   /// görselleriyle aynı dosya-tabanlı kalıcılık deseni)
   cvFileUrl   String?
   coverNote   String?
-  kvkkConsent Boolean @default(false)
+  kvkkConsent Boolean           @default(false)
   status      ApplicationStatus @default(YENI)
 
   createdAt DateTime @default(now())
@@ -414,37 +414,23 @@ enum ServiceRequestStatus {
 }
 
 model ServiceRequest {
-  id                String   @id @default(cuid())
-  requestNumber     String   @unique
-  fullName          String
-  institutionAndRole String
-  phone             String
-  address           String
-  invoiceDate       String?
+  id                     String               @id @default(cuid())
+  requestNumber          String               @unique
+  fullName               String
+  institutionAndRole     String
+  phone                  String
+  address                String
+  invoiceDate            String?
   deviceBrandModelSerial String
-  problemDescription String
-  accessoriesIncluded String
-  usedInMicrobiology Boolean
-  note              String?
-  status            ServiceRequestStatus @default(YENI)
+  problemDescription     String
+  accessoriesIncluded    String
+  usedInMicrobiology     Boolean
+  note                   String?
+  status                 ServiceRequestStatus @default(YENI)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([status])
   @@map("service_requests")
-}
-enum Role {
-  ADMIN
-  PERSONEL
-}
-
-model User {
-  id        String   @id @default(cuid())
-  email     String   @unique
-  password  String
-  adSoyad   String
-  role      Role     @default(PERSONEL)
-  isActive  Boolean  @default(true) // Hesap aktif mi / aktive edildi mi?
-  createdAt DateTime @default(now())
 }
