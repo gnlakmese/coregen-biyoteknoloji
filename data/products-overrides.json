@@ -1,0 +1,1831 @@
+[
+  {
+    "slug": "dlab-pipet-kontrolori",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB Pipet Kontrolörü",
+    "brand": "DLAB",
+    "shortDescription": "Serolojik pipetlerle hassas sıvı aspirasyon ve dağıtımı için motorlu elektronik kontrolör.",
+    "description": [
+      "Pipet Kontrolörü, serolojik pipetlerle çalışırken elle emme/üfleme yerine motorlu, ayarlanabilir hızda aspirasyon ve dağıtım sağlayan elektronik bir el cihazıdır.",
+      "Değişken hız kontrolü ve hafif gövde tasarımı, hücre kültürü ve genel sıvı transfer işlemlerinde uzun süreli kullanımda el yorgunluğunu azaltır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Uyumlu Pipet",
+        "value": "0.1 mL – 100 mL serolojik pipetler"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Motorlu, değişken hız kontrolü"
+      },
+      {
+        "label": "Güç Kaynağı",
+        "value": "Şarj edilebilir batarya"
+      }
+    ],
+    "usageAreas": [
+      "Hücre Kültürü",
+      "Besiyeri Hazırlama",
+      "Genel Sıvı Transferi"
+    ],
+    "relatedProductSlugs": [
+      "dlab-hipette-mikropipet",
+      "dlab-pipet-doldurucu"
+    ]
+  },
+  {
+    "slug": "dlab-pipet-doldurucu",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB Pipet Doldurucu / Basamaklandırıcı",
+    "brand": "DLAB",
+    "shortDescription": "Tekrarlı dağıtım (stepper) işlevine sahip, seri numune hazırlığı için mekanik pipetleme aksesuarı.",
+    "description": [
+      "Pipet Doldurucu/Basamaklandırıcı (stepper), bir enjektör veya şırınga ile sabit hacimli tekrarlı dağıtım yapılmasını sağlayan, çok sayıda örneğin hızlıca hazırlanmasında kullanılan mekanik bir aksesuardır.",
+      "Basamaklı doz ayarı, seri dilüsyon ve çoklu kuyucuk doldurma gibi tekrarlayan işlemlerde zaman kazandırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik, basamaklı (stepper) dağıtım"
+      },
+      {
+        "label": "Kullanım Alanı",
+        "value": "Tekrarlı sabit hacim dağıtımı"
+      }
+    ],
+    "usageAreas": [
+      "Seri Dilüsyon",
+      "Çoklu Kuyucuk Doldurma",
+      "Numune Hazırlama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-pipet-kontrolori",
+      "dlab-hipette-mikropipet"
+    ]
+  },
+  {
+    "slug": "dlab-orbital-calkalayici",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB Orbital Çalkalayıcı",
+    "brand": "DLAB",
+    "shortDescription": "Ayarlanabilir hız ve süreli, platform üzerinde çoklu numune karıştırma için orbital çalkalayıcı.",
+    "description": [
+      "Orbital Çalkalayıcı, erlen/şişe gibi kapları platformu üzerinde dairesel harekete tabi tutarak sıvı numunelerin homojen karıştırılmasını sağlar.",
+      "Değiştirilebilir platform aksesuarlarıyla farklı kap boyutu ve sayısına uyum sağlar; hücre kültürü ve genel karıştırma uygulamalarında kullanılır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hız Aralığı",
+        "value": "0–220 rpm (tipik)"
+      },
+      {
+        "label": "Hareket Tipi",
+        "value": "Orbital (dairesel)"
+      },
+      {
+        "label": "Zamanlayıcı",
+        "value": "Programlanabilir"
+      }
+    ],
+    "usageAreas": [
+      "Besiyeri Karıştırma",
+      "Hücre Kültürü",
+      "Genel Laboratuvar Karıştırma"
+    ],
+    "relatedProductSlugs": [
+      "dlab-sk-o180-c",
+      "dlab-vorteks-mikser",
+      "dlab-tup-rotatoru"
+    ]
+  },
+  {
+    "slug": "dlab-tup-rotatoru",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB Tüp Rotatörü",
+    "brand": "DLAB",
+    "shortDescription": "Numune tüplerinin yavaş, sürekli dönüşle karıştırılması için rotator.",
+    "description": [
+      "Tüp Rotatörü, numune tüplerini yavaş ve sürekli bir dönüş hareketiyle karıştırarak hassas biyolojik örneklerde köpürme veya aşırı kesme kuvveti oluşturmadan homojenizasyon sağlar.",
+      "DNA/RNA ekstraksiyonu gibi nazik karıştırma gerektiren adımlarda tercih edilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Dönüş Hızı",
+        "value": "Ayarlanabilir (tipik 1–70 rpm)"
+      },
+      {
+        "label": "Kullanım Alanı",
+        "value": "Nazik, sürekli tüp karıştırma"
+      }
+    ],
+    "usageAreas": [
+      "DNA/RNA İzolasyonu Ön Karıştırma",
+      "Antikor İnkübasyonu",
+      "Numune Homojenizasyonu"
+    ],
+    "relatedProductSlugs": [
+      "dlab-orbital-calkalayici",
+      "dlab-vorteks-mikser",
+      "dna-izolasyon-kiti"
+    ]
+  },
+  {
+    "slug": "dlab-termo-karistirici",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB Termo Karıştırıcı (Thermoshaker)",
+    "brand": "DLAB",
+    "shortDescription": "Isıtma ve çalkalama fonksiyonlarını birleştiren, mikrosantrifüj tüpü uyumlu numune hazırlama cihazı.",
+    "description": [
+      "Termo Karıştırıcı, numunelerin aynı anda kontrollü sıcaklıkta tutulup çalkalanmasını sağlayarak enzim reaksiyonları ve inkübasyon adımlarında tek cihazla iki işlevi birleştirir.",
+      "Değiştirilebilir bloklarla farklı tüp formatlarına uyum sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Sıcaklık Aralığı",
+        "value": "Oda sıcaklığı +5°C – 100°C (tipik)"
+      },
+      {
+        "label": "Çalkalama Hızı",
+        "value": "300–1500 rpm (tipik)"
+      },
+      {
+        "label": "Blok Uyumluluğu",
+        "value": "Değiştirilebilir bloklar"
+      }
+    ],
+    "usageAreas": [
+      "Enzim Reaksiyonları",
+      "Numune İnkübasyonu",
+      "DNA/RNA İzolasyonu Ön Hazırlık"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dry-bath",
+      "dlab-vorteks-mikser",
+      "dlab-mikro-santrifuj"
+    ]
+  },
+  {
+    "slug": "dlab-mini-santrifuj",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB Mini Santrifüj",
+    "brand": "DLAB",
+    "shortDescription": "Kompakt, hızlı spin-down işlemleri için masaüstü mini santrifüj.",
+    "description": [
+      "Mini Santrifüj, PCR tüpleri ve küçük hacimli mikrosantrifüj tüplerinde hızlı spin-down işlemleri (tüp duvarındaki damlacıkları toplama) için tasarlanmış kompakt bir cihazdır.",
+      "Küçük yer kaplaması ve hızlı başlangıç/durma süresi ile yoğun kullanılan iş akışlarında pratiklik sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "4000–6000 rpm (tipik)"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "PCR tüpü / mikrosantrifüj tüpü için kompakt rotor"
+      }
+    ],
+    "usageAreas": [
+      "Hızlı Spin-Down",
+      "PCR Sonrası Numune Toplama",
+      "Genel Laboratuvar Kullanımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-mikro-santrifuj",
+      "santrifuj",
+      "pcr-tup"
+    ]
+  },
+  {
+    "slug": "dlab-micropette-plus-20-200ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB MicroPette Plus Ayarlanabilir Otomatik Pipet 20-200 μL Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-micropette-plus-20-200ul.png",
+    "shortDescription": "20-200 μL hacim aralığında ayarlanabilir, tamamı otoklavlanabilir mekanik mikropipet.",
+    "description": [
+      "MicroPette Plus, hacim ayarının kullanıcı tarafından belirlenen aralıkta hassas şekilde yapılabildiği, mekanik prensiple çalışan bir ayarlanabilir hacimli mikropipettir.",
+      "Pipetin tüm gövdesinin otoklavlanabilir olması, sterilizasyon gerektiren çalışma ortamlarında (hücre kültürü, mikrobiyoloji) kontaminasyon riskini azaltarak güvenli kullanım sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "20–200 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik (ayarlanabilir hacim)"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      }
+    ],
+    "usageAreas": [
+      "Numune Hazırlama",
+      "Reaktif Transferi",
+      "Hücre Kültürü",
+      "PCR Kurulumu"
+    ],
+    "relatedProductSlugs": [
+      "dlab-micropette-plus-1000-5000ul",
+      "dlab-micropette-plus-01-25ul",
+      "dlab-micropette-plus-5-50ul",
+      "dlab-hipette-mikropipet",
+      "dlab-e-pette-elektronik-pipet",
+      "dlab-pipet-kontrolori"
+    ]
+  },
+  {
+    "slug": "dlab-micropette-plus-5-50ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB MicroPette Plus Ayarlanabilir Otomatik Pipet 5.0-50.0 μL Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-micropette-plus-5-50ul.png",
+    "shortDescription": "5.0-50.0 μL hacim aralığında ayarlanabilir, tamamı otoklavlanabilir mekanik mikropipet.",
+    "description": [
+      "MicroPette Plus serisinin bu modeli, düşük hacimli (5-50 μL) hassas pipetleme gerektiren uygulamalar için mekanik prensiple çalışan ayarlanabilir hacimli bir mikropipettir.",
+      "Pipetin tüm gövdesinin otoklavlanabilir olması, sterilizasyon gerektiren çalışma ortamlarında (hücre kültürü, mikrobiyoloji) kontaminasyon riskini azaltarak güvenli kullanım sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "5.0–50.0 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik (ayarlanabilir hacim)"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      }
+    ],
+    "usageAreas": [
+      "Numune Hazırlama",
+      "Reaktif Transferi",
+      "Hücre Kültürü",
+      "PCR Kurulumu"
+    ],
+    "relatedProductSlugs": [
+      "dlab-micropette-plus-1000-5000ul",
+      "dlab-micropette-plus-01-25ul",
+      "dlab-micropette-plus-20-200ul",
+      "dlab-hipette-mikropipet",
+      "dlab-pipet-kontrolori"
+    ]
+  },
+  {
+    "slug": "dlab-micropette-plus-01-25ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB MicroPette Plus Ayarlanabilir Otomatik Pipet 0.1-2.5 μL Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-micropette-plus-01-25ul.png",
+    "shortDescription": "0.1-2.5 μL hacim aralığında ayarlanabilir, tamamı otoklavlanabilir mekanik mikropipet.",
+    "description": [
+      "MicroPette Plus serisinin bu modeli, çok düşük hacimli (0.1-2.5 μL) yüksek hassasiyet gerektiren uygulamalar için mekanik prensiple çalışan ayarlanabilir hacimli bir mikropipettir.",
+      "Pipetin tüm gövdesinin otoklavlanabilir olması, sterilizasyon gerektiren çalışma ortamlarında (hücre kültürü, mikrobiyoloji) kontaminasyon riskini azaltarak güvenli kullanım sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "0.1–2.5 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik (ayarlanabilir hacim)"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      }
+    ],
+    "usageAreas": [
+      "Hassas Numune Hazırlama",
+      "Reaktif Transferi",
+      "PCR Kurulumu",
+      "qPCR Reaksiyon Hazırlığı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-micropette-plus-1000-5000ul",
+      "dlab-micropette-plus-5-50ul",
+      "dlab-micropette-plus-20-200ul",
+      "dlab-hipette-mikropipet"
+    ]
+  },
+  {
+    "slug": "dlab-toppette-100-1000ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB TopPette Ayarlanabilir Otomatik Pipet 100-1000 μL",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-toppette-100-1000ul.png",
+    "shortDescription": "100-1000 μL hacim aralığında ayarlanabilir mekanik mikropipet.",
+    "description": [
+      "TopPette, orta-yüksek hacimli (100-1000 μL) pipetleme işlemleri için mekanik prensiple çalışan ayarlanabilir hacimli bir mikropipet serisidir.",
+      "Ergonomik gövde tasarımı ve düşük pistonlama kuvveti, yoğun kullanımda kullanıcı konforunu artırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "100–1000 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik (ayarlanabilir hacim)"
+      }
+    ],
+    "usageAreas": [
+      "Numune Hazırlama",
+      "Besiyeri/Tampon Transferi",
+      "Genel Pipetleme"
+    ],
+    "relatedProductSlugs": [
+      "dlab-toppette-2-20ul",
+      "dlab-micropette-plus-20-200ul",
+      "dlab-hipette-mikropipet",
+      "dlab-pipet-kontrolori"
+    ]
+  },
+  {
+    "slug": "dlab-toppette-2-20ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB TopPette Ayarlanabilir Otomatik Pipet 2-20 μL",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-toppette-2-20ul.png",
+    "shortDescription": "2-20 μL hacim aralığında ayarlanabilir mekanik mikropipet.",
+    "description": [
+      "TopPette serisinin bu modeli, düşük-orta hacimli (2-20 μL) pipetleme işlemleri için mekanik prensiple çalışan ayarlanabilir hacimli bir mikropipettir.",
+      "Ergonomik gövde tasarımı ve düşük pistonlama kuvveti, yoğun kullanımda kullanıcı konforunu artırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "2–20 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik (ayarlanabilir hacim)"
+      }
+    ],
+    "usageAreas": [
+      "PCR Kurulumu",
+      "Numune Hazırlama",
+      "Reaktif Transferi"
+    ],
+    "relatedProductSlugs": [
+      "dlab-toppette-100-1000ul",
+      "dlab-micropette-plus-01-25ul",
+      "dlab-hipette-mikropipet"
+    ]
+  },
+  {
+    "slug": "dlab-micropette-plus-1000-5000ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB MicroPette Plus Ayarlanabilir Otomatik Pipet 1000-5000 μL Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-micropette-plus-1000-5000ul.png",
+    "shortDescription": "1000-5000 μL hacim aralığında ayarlanabilir, tamamı otoklavlanabilir mekanik mikropipet.",
+    "description": [
+      "MicroPette Plus serisinin bu modeli, yüksek hacimli (1000-5000 μL) sıvı transferi gerektiren uygulamalar için mekanik prensiple çalışan ayarlanabilir hacimli bir mikropipettir.",
+      "Pipetin tüm gövdesinin otoklavlanabilir olması, sterilizasyon gerektiren çalışma ortamlarında (hücre kültürü, mikrobiyoloji) kontaminasyon riskini azaltarak güvenli kullanım sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "1000–5000 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Mekanik (ayarlanabilir hacim)"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      }
+    ],
+    "usageAreas": [
+      "Besiyeri Hazırlama",
+      "Yüksek Hacimli Sıvı Transferi",
+      "Genel Laboratuvar Kullanımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-micropette-plus-20-200ul",
+      "dlab-micropette-plus-5-50ul",
+      "dlab-toppette-100-1000ul"
+    ]
+  },
+  {
+    "slug": "dlab-dispensmate-pro-10-100ml",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB DispensMate-Pro Dispenser 10-100 mL Kimyasallara Karşı Dirençli Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dispensmate-pro-10-100ml.png",
+    "shortDescription": "Şişe ağzına takılarak kullanılan, 10-100 mL hacim aralığında ayarlanabilir, kimyasallara dirençli dispenser.",
+    "description": [
+      "DispensMate-Pro, reaktif şişesinin ağzına doğrudan takılarak tekrarlanan sabit hacimli sıvı dağıtımı yapılmasını sağlayan bir şişe üstü dispenserdir (bottle-top dispenser).",
+      "Kimyasallara karşı dirençli malzeme yapısı ve tamamı otoklavlanabilir gövdesi, farklı kimyasal ve tampon çözeltilerle güvenli ve tekrarlanabilir çalışmaya olanak tanır.",
+      "Şeffaf hacim göstergesi üzerinden hızlı ayar yapılabilmesi, besiyeri ve tampon hazırlama gibi tekrarlayan işlemlerde zaman kazandırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "10–100 mL"
+      },
+      {
+        "label": "Kimyasal Direnç",
+        "value": "Kimyasallara dirençli"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      },
+      {
+        "label": "Montaj",
+        "value": "Şişe ağzına takılan (bottle-top) tip"
+      }
+    ],
+    "usageAreas": [
+      "Besiyeri Hazırlama",
+      "Tampon Çözelti Dağıtımı",
+      "Tekrarlı Sabit Hacim Dağıtımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dispensmate-pro-5-50ml",
+      "dlab-micropette-plus-1000-5000ul",
+      "dlab-pipet-doldurucu",
+      "tris-hcl"
+    ]
+  },
+  {
+    "slug": "dlab-dispensmate-pro-5-50ml",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB DispensMate-Pro Dispenser 5.0-50 mL Kimyasallara Karşı Dirençli Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dispensmate-pro-5-50ml.png",
+    "shortDescription": "Şişe ağzına takılarak kullanılan, 5.0-50 mL hacim aralığında ayarlanabilir, kimyasallara dirençli dispenser.",
+    "description": [
+      "DispensMate-Pro serisinin bu modeli, düşük-orta hacimli (5-50 mL) tekrarlanan sabit hacimli sıvı dağıtımı için reaktif şişesinin ağzına doğrudan takılan bir şişe üstü dispenserdir.",
+      "Kimyasallara karşı dirençli malzeme yapısı ve tamamı otoklavlanabilir gövdesi, farklı kimyasal ve tampon çözeltilerle güvenli ve tekrarlanabilir çalışmaya olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "5.0–50 mL"
+      },
+      {
+        "label": "Kimyasal Direnç",
+        "value": "Kimyasallara dirençli"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      },
+      {
+        "label": "Montaj",
+        "value": "Şişe ağzına takılan (bottle-top) tip"
+      }
+    ],
+    "usageAreas": [
+      "Besiyeri Hazırlama",
+      "Tampon Çözelti Dağıtımı",
+      "Tekrarlı Sabit Hacim Dağıtımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dispensmate-pro-10-100ml",
+      "dlab-pipet-doldurucu",
+      "tris-hcl"
+    ]
+  },
+  {
+    "slug": "dlab-dispensmate-2-5-25ml",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB DispensMate Dispenser (2.5-25 mL) - Kimyasallara Karşı Dirençli - Tamamı Otoklavlanabilir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dispensmate-2-5-25ml.png",
+    "shortDescription": "Şişe ağzına takılarak kullanılan, 2.5-25 mL hacim aralığında ayarlanabilir, kimyasallara dirençli dispenser.",
+    "description": [
+      "DispensMate, reaktif şişesinin ağzına doğrudan takılarak tekrarlanan sabit hacimli sıvı dağıtımı yapılmasını sağlayan, DispensMate-Pro serisine göre daha kompakt bir şişe üstü dispenserdir.",
+      "Kimyasallara karşı dirençli malzeme yapısı ve tamamı otoklavlanabilir gövdesi, farklı kimyasal ve tampon çözeltilerle güvenli ve tekrarlanabilir çalışmaya olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hacim Aralığı",
+        "value": "2.5–25 mL"
+      },
+      {
+        "label": "Kimyasal Direnç",
+        "value": "Kimyasallara dirençli"
+      },
+      {
+        "label": "Otoklavlanabilirlik",
+        "value": "Tamamı otoklavlanabilir"
+      },
+      {
+        "label": "Montaj",
+        "value": "Şişe ağzına takılan (bottle-top) tip"
+      }
+    ],
+    "usageAreas": [
+      "Besiyeri Hazırlama",
+      "Tampon Çözelti Dağıtımı",
+      "Tekrarlı Sabit Hacim Dağıtımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dispensmate-pro-5-50ml",
+      "dlab-dispensmate-pro-10-100ml",
+      "tris-hcl"
+    ]
+  },
+  {
+    "slug": "dlab-uv-vis-spektrofotometre",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Ölçüm Cihazları",
+    "name": "DLAB SP-UV1000 UV Spektrofotometre 200-1000 nm Tungsten ve Deuterium Lambalı + Yazılım",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-uv-vis-spektrofotometre.png",
+    "shortDescription": "200-1000 nm dalga boyu aralığında, çift lamba (Tungsten + Deuterium) kaynaklı, yazılım destekli UV-Vis spektrofotometre.",
+    "description": [
+      "SP-UV1000, hem ultraviyole (Deuterium lamba) hem görünür bölgede (Tungsten lamba) ölçüm yapabilen çift ışık kaynaklı bir UV-Vis spektrofotometredir.",
+      "Örneklerin absorbans, geçirgenlik ve konsantrasyon değerlerini geniş bir dalga boyu aralığında (200-1000 nm) ölçmeyi sağlar; birlikte sunulan yazılım ile ölçüm verileri kaydedilip analiz edilebilir.",
+      "Açılır numune bölmesi, farklı küvet tiplerine kolay erişim sağlayacak şekilde tasarlanmıştır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Dalga Boyu Aralığı",
+        "value": "200–1000 nm"
+      },
+      {
+        "label": "Işık Kaynağı",
+        "value": "Tungsten (görünür) + Deuterium (UV) lamba"
+      },
+      {
+        "label": "Yazılım",
+        "value": "Birlikte sunulan ölçüm/analiz yazılımı"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dahili LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "DNA/RNA/Protein Konsantrasyon Tayini",
+      "Kimyasal Analiz",
+      "Kalite Kontrol"
+    ],
+    "relatedProductSlugs": [
+      "dlab-sp-uv1100",
+      "dlab-ph-metre",
+      "dlab-dispensmate-pro-10-100ml"
+    ]
+  },
+  {
+    "slug": "dlab-sp-uv1100",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Ölçüm Cihazları",
+    "name": "DLAB SP-UV1100 UV Spektrofotometre 190-1100 nm HYBEC Tungsten Lamba | Milaras Döteryum Lamba + Yazılım",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-sp-uv1100.png",
+    "shortDescription": "190-1100 nm geniş dalga boyu aralığında, çift lamba kaynaklı, yazılım destekli üst segment UV-Vis spektrofotometre.",
+    "description": [
+      "SP-UV1100, SP-UV1000 modeline göre daha geniş bir dalga boyu aralığında (190-1100 nm) ölçüm yapabilen, HYBEC Tungsten ve Milaras Döteryum lamba kombinasyonuyla çalışan bir UV-Vis spektrofotometredir.",
+      "Örneklerin absorbans, geçirgenlik ve konsantrasyon değerlerini geniş bir dalga boyu aralığında ölçmeyi sağlar; birlikte sunulan yazılım ile ölçüm verileri kaydedilip analiz edilebilir.",
+      "Açılır numune bölmesi, farklı küvet tiplerine kolay erişim sağlayacak şekilde tasarlanmıştır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Dalga Boyu Aralığı",
+        "value": "190–1100 nm"
+      },
+      {
+        "label": "Işık Kaynağı",
+        "value": "HYBEC Tungsten lamba + Milaras Döteryum lamba"
+      },
+      {
+        "label": "Yazılım",
+        "value": "Birlikte sunulan ölçüm/analiz yazılımı"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dahili LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "DNA/RNA/Protein Konsantrasyon Tayini",
+      "Kimyasal Analiz",
+      "Kalite Kontrol",
+      "Geniş Spektrum Araştırma Uygulamaları"
+    ],
+    "relatedProductSlugs": [
+      "dlab-uv-vis-spektrofotometre",
+      "dlab-ph-metre"
+    ]
+  },
+  {
+    "slug": "dlab-sp-v1000",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Ölçüm Cihazları",
+    "name": "DLAB SP-V1000 V Spektrofotometre 325-1000 nm HYBEC Tungsten Lamba",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-sp-v1000.png",
+    "shortDescription": "325-1000 nm görünür bölge dalga boyu aralığında, tek lamba (Tungsten) kaynaklı spektrofotometre.",
+    "description": [
+      "SP-V1000, yalnızca görünür ışık bölgesinde (325-1000 nm) ölçüm yapan, HYBEC Tungsten lamba ile çalışan bir spektrofotometredir.",
+      "UV bölgede ölçüme ihtiyaç duyulmayan, görünür bölgede renk/konsantrasyon ölçümü ağırlıklı uygulamalar için SP-UV1000/SP-UV1100 modellerine göre daha sade bir alternatiftir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Dalga Boyu Aralığı",
+        "value": "325–1000 nm (görünür bölge)"
+      },
+      {
+        "label": "Işık Kaynağı",
+        "value": "HYBEC Tungsten lamba"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dahili LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "Renk/Konsantrasyon Ölçümü",
+      "Görünür Bölge Kimyasal Analiz",
+      "Kalite Kontrol"
+    ],
+    "relatedProductSlugs": [
+      "dlab-uv-vis-spektrofotometre",
+      "dlab-sp-uv1100"
+    ]
+  },
+  {
+    "slug": "dlab-ms7-h550-s-set2",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB MS7-H550-S SET2 Isıtıcılı Manyetik Karıştırıcı 00-1.500 rpm / RT-550 °C / 10 L",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-ms7-h550-s-set2.png",
+    "shortDescription": "Sıcaklık probu ve destek standı ile birlikte gelen, ısıtmalı ve manyetik karıştırmalı set (10 L kapasiteye kadar).",
+    "description": [
+      "MS7-H550-S SET2, sıvı numunelerin aynı anda ısıtılıp manyetik olarak karıştırılmasını sağlayan, dijital göstergeli bir ısıtıcılı manyetik karıştırıcı setidir.",
+      "Sete dahil sıcaklık probu ve destek standı, numune sıcaklığının gerçek zamanlı izlenmesini ve düzeneğin güvenli şekilde kurulmasını sağlar.",
+      "Geniş karıştırma hızı (0-1.500 rpm) ve sıcaklık (oda sıcaklığı-550°C) aralığı, farklı hacim ve uygulama ihtiyaçlarına (10 L kapasiteye kadar) esneklik sunar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Karıştırma Hızı",
+        "value": "0–1.500 rpm"
+      },
+      {
+        "label": "Sıcaklık Aralığı",
+        "value": "Oda sıcaklığı – 550°C"
+      },
+      {
+        "label": "Maksimum Karıştırma Kapasitesi",
+        "value": "10 L"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Sıcaklık probu + destek standı"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LED gösterge"
+      }
+    ],
+    "usageAreas": [
+      "Çözelti Hazırlama",
+      "Isıtmalı Karıştırma",
+      "Kimyasal Reaksiyon Takibi"
+    ],
+    "relatedProductSlugs": [
+      "dlab-ms-h-proa-set2",
+      "dlab-orbital-calkalayici",
+      "dlab-vorteks-mikser",
+      "dlab-tup-rotatoru"
+    ]
+  },
+  {
+    "slug": "dlab-ms-h-proa-set2",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB MS-H-ProA SET 2 Isıtıcılı Manyetik Karıştırıcı 100-1.500 rpm / RT-340 °C / 20 L",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-ms-h-proa-set2.png",
+    "shortDescription": "Sıcaklık probu ve destek standı ile birlikte gelen, gelişmiş LCD ekranlı, üst segment ısıtıcılı manyetik karıştırıcı seti (20 L kapasiteye kadar).",
+    "description": [
+      "MS-H-ProA SET 2, sıvı numunelerin aynı anda ısıtılıp manyetik olarak karıştırılmasını sağlayan, gelişmiş LCD ekranlı bir ısıtıcılı manyetik karıştırıcı setidir.",
+      "Sete dahil sıcaklık probu ve destek standı, numune sıcaklığının gerçek zamanlı izlenmesini sağlar; ekranda sıcaklık ve karıştırma hızı eş zamanlı görüntülenir.",
+      "MS7 serisine göre daha yüksek karıştırma kapasitesi (20 L'ye kadar) ile büyük hacimli çözelti hazırlama işlemlerinde kullanılabilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Karıştırma Hızı",
+        "value": "100–1.500 rpm"
+      },
+      {
+        "label": "Sıcaklık Aralığı",
+        "value": "Oda sıcaklığı – 340°C"
+      },
+      {
+        "label": "Maksimum Karıştırma Kapasitesi",
+        "value": "20 L"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Sıcaklık probu + destek standı"
+      },
+      {
+        "label": "Ekran",
+        "value": "Gelişmiş LCD ekran (sıcaklık + hız eş zamanlı)"
+      }
+    ],
+    "usageAreas": [
+      "Büyük Hacimli Çözelti Hazırlama",
+      "Isıtmalı Karıştırma",
+      "Kimyasal Reaksiyon Takibi"
+    ],
+    "relatedProductSlugs": [
+      "dlab-ms7-h550-s-set2",
+      "dlab-orbital-calkalayici",
+      "dlab-tup-rotatoru"
+    ]
+  },
+  {
+    "slug": "dlab-d2012s",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB D2012S Mikro Santrifüj Yüksek Hızlı 300-15000 rpm / 0.2/0.5/1.5/2 mL×12",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-d2012s.png",
+    "shortDescription": "300-15.000 rpm hız aralığında, 12 pozisyonlu, çoklu tüp boyutu uyumlu yüksek hızlı mikro santrifüj.",
+    "description": [
+      "D2012S, mikrosantrifüj tüplerinde hızlı numune ayrıştırma ve çöktürme işlemleri için geniş bir hız aralığında (300-15.000 rpm) çalışan yüksek hızlı bir mikro santrifüjdür.",
+      "12 pozisyonlu rotoru, 0.2/0.5/1.5/2 mL gibi farklı tüp hacimlerine uyum sağlayarak tek cihazla çeşitli numune formatlarının işlenmesine imkan tanır.",
+      "Dijital ekran üzerinden hız ve süre programlanabilir; Pulse (anlık çalıştırma) modu kısa süreli spin-down işlemlerini kolaylaştırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "300–15.000 rpm"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "0.2 / 0.5 / 1.5 / 2 mL × 12"
+      },
+      {
+        "label": "Çalışma Modları",
+        "value": "Programlanabilir süre/hız, Pulse (anlık) modu"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "DNA/RNA/Protein İzolasyonu",
+      "Hızlı Spin-Down",
+      "Numune Ayrıştırma"
+    ],
+    "relatedProductSlugs": [
+      "dlab-mikro-santrifuj",
+      "dlab-mini-santrifuj",
+      "santrifuj"
+    ]
+  },
+  {
+    "slug": "dlab-dm0636-set2",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DM0636 SET 2 Santrifüj (50 mL × 8 ve 15 mL × 16) / 300-6000 rpm",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dm0636-set2.png",
+    "shortDescription": "50 mL ve 15 mL Falcon tüpleriyle uyumlu, 300-6000 rpm hız aralığında masaüstü santrifüj.",
+    "description": [
+      "DM0636 SET 2, mikrosantrifüj tüplerinden daha büyük hacimli 50 mL ve 15 mL Falcon tüpleriyle çalışan, orta hızlı bir masaüstü santrifüjdür.",
+      "Sete dahil rotor, aynı anda 8 adet 50 mL veya 16 adet 15 mL tüp kapasitesi sunarak numune hazırlama ve hücre kültürü çalışmalarında verimliliği artırır.",
+      "Dijital ekran üzerinden hız, süre ve santrifüjel kuvvet (RCF) değerleri programlanabilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "300–6.000 rpm"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "50 mL × 8 veya 15 mL × 16"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "Hücre Kültürü",
+      "Numune Ayrıştırma",
+      "Besiyeri/Süpernatant İşlemleri"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dm0412-set2",
+      "dlab-d2012s",
+      "dlab-mikro-santrifuj",
+      "santrifuj"
+    ]
+  },
+  {
+    "slug": "dlab-dm0412-set2",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DM0412 Santrifüj SET2 6 x 15 veya 6 x 50 mL / 300-4500 rpm A6-50P Rotor Dahildir",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dm0412-set2.png",
+    "shortDescription": "6×15 mL veya 6×50 mL tüp kapasiteli, 300-4500 rpm hız aralığında, A6-50P rotor dahil masaüstü santrifüj seti.",
+    "description": [
+      "DM0412 SET2, 15 mL veya 50 mL Falcon tüpleriyle (6'şar adet) çalışan, orta hızlı bir masaüstü santrifüjdür.",
+      "Sete dahil A6-50P rotor, farklı tüp boyutlarına adaptörsüz veya adaptörlü uyum sağlayarak numune hazırlama işlemlerinde esneklik sunar.",
+      "Dijital ekran üzerinden hız ve süre kolayca ayarlanabilir; Pulse (anlık çalıştırma) modu kısa spin-down işlemlerini hızlandırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "300–4.500 rpm"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "6 × 15 mL veya 6 × 50 mL (A6-50P rotor dahil)"
+      },
+      {
+        "label": "Çalışma Modları",
+        "value": "Programlanabilir süre/hız, Pulse (anlık) modu"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "Hücre Kültürü",
+      "Numune Ayrıştırma",
+      "Besiyeri/Süpernatant İşlemleri"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dm0636-set2",
+      "dlab-d2012s",
+      "santrifuj"
+    ]
+  },
+  {
+    "slug": "dlab-dm0408",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DM0408 Klinik Santrifüj Açılı 15 mL x 8 (Varsayılan), Açılı 10 mL x 12 | 500-4.000 rpm",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dm0408.png",
+    "shortDescription": "Açılı rotor ile 15 mL×8 (varsayılan) veya 10 mL×12 tüp kapasiteli, 500-4.000 rpm hız aralığında klinik santrifüj.",
+    "description": [
+      "DM0408, klinik ve rutin laboratuvar numunelerinin (serum, plazma vb.) ayrıştırılması için açılı rotor ile çalışan bir masaüstü santrifüjdür.",
+      "Varsayılan olarak 15 mL×8 tüp kapasiteli rotorla gelir; opsiyonel 10 mL×12 rotor ile farklı numune hacimlerine uyum sağlanabilir.",
+      "Dijital LED ekran üzerinden hız ve süre kolayca ayarlanabilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "500–4.000 rpm"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "Açılı 15 mL × 8 (varsayılan) veya Açılı 10 mL × 12"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LED ekran"
+      }
+    ],
+    "usageAreas": [
+      "Klinik Numune Ayrıştırma (Serum/Plazma)",
+      "Rutin Laboratuvar Kullanımı",
+      "Numune Hazırlama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dm0424",
+      "dlab-dm0412-set2",
+      "dlab-dm0636-set2",
+      "santrifuj"
+    ]
+  },
+  {
+    "slug": "dlab-dm0424",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DM0424 Klinik Santrifüj 6 x 15 mL / 4 x 50 mL / 24 x 15 mL / 12 x 10 mL / 8 x 15 mL | 500-4.000 rpm",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dm0424.png",
+    "shortDescription": "Değiştirilebilir rotor seçenekleriyle (6×15, 4×50, 24×15, 12×10, 8×15 mL) çok amaçlı klinik santrifüj.",
+    "description": [
+      "DM0424, farklı rotor seçenekleriyle kullanılabilen, klinik ve rutin laboratuvar numunelerinin ayrıştırılmasında esneklik sunan bir masaüstü santrifüjdür.",
+      "Tek cihazla 15 mL, 50 mL ve 10 mL gibi farklı tüp formatlarına ve numune sayılarına (6, 8, 12 veya 24 pozisyon) uyum sağlanabilir.",
+      "Dijital ekran üzerinden hız ve süre kolayca ayarlanabilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "500–4.000 rpm"
+      },
+      {
+        "label": "Rotor Seçenekleri",
+        "value": "6×15 mL, 4×50 mL, 24×15 mL, 12×10 mL, 8×15 mL"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "Klinik Numune Ayrıştırma (Serum/Plazma)",
+      "Rutin Laboratuvar Kullanımı",
+      "Çoklu Format Numune Hazırlama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dm0408",
+      "dlab-dm0412-set2",
+      "dlab-dm0636-set2"
+    ]
+  },
+  {
+    "slug": "dlab-dm1224",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DM1224 Yüksek Hızlı Hematokrit Santrifüj 500-12.000 rpm",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dm1224.png",
+    "shortDescription": "Kan hematokrit tayini için özel diskli rotorlu, 500-12.000 rpm hız aralığında yüksek hızlı santrifüj.",
+    "description": [
+      "DM1224, kapiller kan tüplerinin yerleştirildiği özel diskli rotoru ile hematokrit (kanın hücresel/plazma oranı) tayini için tasarlanmış yüksek hızlı bir santrifüjdür.",
+      "Şeffaf ölçüm diski, santrifüj sonrası hematokrit değerinin doğrudan disk üzerinden okunmasını sağlar.",
+      "Dijital ekran üzerinden hız ve süre kolayca ayarlanabilir; Pulse (anlık çalıştırma) modu desteklenir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "500–12.000 rpm"
+      },
+      {
+        "label": "Rotor Tipi",
+        "value": "Hematokrit diski (kapiller tüp uyumlu)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "Hematokrit Tayini",
+      "Klinik Kan Analizi",
+      "Rutin Laboratuvar Kullanımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dm0408",
+      "dlab-dm0424",
+      "dlab-d2012s"
+    ]
+  },
+  {
+    "slug": "dlab-dm0506",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DM0506 Klinik Santrifüj (6 X 15mL / 10mL / 7 mL / 1.5-5 mL / 300-5000 rpm Klinik Uygulamalara Özel)",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dm0506.png",
+    "shortDescription": "Çoklu adaptör desteğiyle 15 mL, 10 mL, 7 mL ve 1.5-5 mL tüplerle uyumlu, klinik uygulamalara özel santrifüj.",
+    "description": [
+      "DM0506, farklı adaptörlerle 15 mL, 10 mL, 7 mL ve 1.5-5 mL gibi çok çeşitli tüp formatlarını destekleyen, klinik numune ayrıştırmaya özel bir masaüstü santrifüjdür.",
+      "Şeffaf kapak, santrifüj sırasında numunelerin görsel olarak takip edilebilmesini sağlar.",
+      "Dijital ekran ve iki programlanabilir hafıza tuşu (P1/P2) ile sık kullanılan ayarlara hızlı erişim sunar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "300–5.000 rpm"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "6 × 15 mL (10 mL / 7 mL / 1.5-5 mL adaptörlerle uyumlu)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran, 2 programlanabilir hafıza (P1/P2)"
+      }
+    ],
+    "usageAreas": [
+      "Klinik Numune Ayrıştırma (Serum/Plazma)",
+      "Rutin Laboratuvar Kullanımı",
+      "Çoklu Format Numune Hazırlama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dm0408",
+      "dlab-dm0424",
+      "dlab-d2012s"
+    ]
+  },
+  {
+    "slug": "dlab-d1008-yesil",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB D1008 Mikro Santrifüj Yeşil (0.2 / 0.5 / 1.5 / 2.0 mL X 8 / 7000 rpm)",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-d1008-yesil.png",
+    "shortDescription": "8 pozisyonlu, 0.2-2.0 mL tüp uyumlu, 7000 rpm hızında kompakt mini santrifüj (yeşil kapak).",
+    "description": [
+      "D1008, mikrosantrifüj tüplerinde hızlı spin-down işlemleri için tasarlanmış, kompakt ve hafif bir mini santrifüjdür.",
+      "8 pozisyonlu rotoru, 0.2/0.5/1.5/2.0 mL gibi farklı tüp hacimlerine uyum sağlar.",
+      "Şeffaf renkli kapak (yeşil), santrifüj sırasında numunelerin görsel takibini kolaylaştırır ve kapak kapalı olmadan rotorun çalışmasını engelleyen güvenlik kilidine sahiptir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Maksimum Hız",
+        "value": "7.000 rpm"
+      },
+      {
+        "label": "Rotor Kapasitesi",
+        "value": "0.2 / 0.5 / 1.5 / 2.0 mL × 8"
+      },
+      {
+        "label": "Güvenlik",
+        "value": "Kapak kilidi (kapak kapanmadan çalışmaz)"
+      },
+      {
+        "label": "Renk Seçeneği",
+        "value": "Yeşil (şeffaf kapak)"
+      }
+    ],
+    "usageAreas": [
+      "Hızlı Spin-Down",
+      "PCR Sonrası Numune Toplama",
+      "Genel Laboratuvar Kullanımı"
+    ],
+    "relatedProductSlugs": [
+      "dlab-mini-santrifuj",
+      "dlab-d2012s",
+      "dlab-mikro-santrifuj"
+    ]
+  },
+  {
+    "slug": "dlab-ph-metre",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Ölçüm Cihazları",
+    "name": "DLAB DCD100T Polarografik Tip DO İletkenlik TDS Tuzluluk Direnç ve Sıcaklık Ölçer",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-ph-metre.png",
+    "shortDescription": "Dokunmatik ekranlı, pH, çözünmüş oksijen (DO), iletkenlik, TDS, tuzluluk, direnç ve sıcaklığı tek cihazda ölçen çok parametreli benchtop ölçüm cihazı.",
+    "description": [
+      "DCD100T, polarografik tip DO sensörü ile çözünmüş oksijen, iletkenlik, TDS (toplam çözünmüş katı madde), tuzluluk, direnç, pH ve sıcaklık parametrelerini tek bir cihazda ölçebilen kapsamlı bir benchtop ölçüm cihazıdır.",
+      "Dokunmatik renkli ekran üzerinden ölçüm sonuçları eş zamanlı görüntülenir; ayarlar, yazdırma ve kayıt işlemleri ekran üzerinden kolayca yönetilir.",
+      "Tampon hazırlama, çözelti kalite kontrolü ve çevresel numune analizlerinde çoklu parametre ihtiyacını tek cihazla karşılar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "DO (Çözünmüş Oksijen) Aralığı",
+        "value": "0.00–20.00 mg/L"
+      },
+      {
+        "label": "İletkenlik Aralığı",
+        "value": "0–2000.0 mS/cm"
+      },
+      {
+        "label": "TDS Aralığı",
+        "value": "0.0 mg/L–100.0 g/L"
+      },
+      {
+        "label": "Tuzluluk Aralığı",
+        "value": "0–100 ppt"
+      },
+      {
+        "label": "Direnç Aralığı",
+        "value": "5.000 Ω·cm–100.0 MΩ·cm"
+      },
+      {
+        "label": "Sıcaklık Aralığı",
+        "value": "0–100°C"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dokunmatik renkli ekran"
+      }
+    ],
+    "usageAreas": [
+      "Tampon Hazırlama",
+      "Çözelti Kalite Kontrolü",
+      "Çevresel Numune Analizi",
+      "Genel Laboratuvar Ölçümleri"
+    ],
+    "relatedProductSlugs": [
+      "dlab-ddo100",
+      "tris-hcl",
+      "dlab-uv-vis-spektrofotometre",
+      "dlab-sp-uv1100"
+    ]
+  },
+  {
+    "slug": "dlab-ddo100",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Ölçüm Cihazları",
+    "name": "DLAB DDO100 Polarografik Tip DO ve Sıcaklık Ölçer 0.00-20.00 mg/L / 0-100 °C",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-ddo100.png",
+    "shortDescription": "Polarografik tip sensörle çözünmüş oksijen ve sıcaklık ölçümüne özel benchtop cihaz.",
+    "description": [
+      "DDO100, polarografik tip DO (çözünmüş oksijen) sensörü ile numunelerdeki çözünmüş oksijen düzeyini ve sıcaklığı ölçen, tek parametreye odaklanmış bir benchtop ölçüm cihazıdır.",
+      "DCD100T'nin çok parametreli yapısına göre daha sade bir alternatif olarak, yalnızca DO ve sıcaklık ölçümü gereken uygulamalar için uygundur.",
+      "Ekran üzerinden kalibrasyon, ölçüm modu ve kayıt işlemleri kolayca yönetilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "DO (Çözünmüş Oksijen) Aralığı",
+        "value": "0.00–20.00 mg/L"
+      },
+      {
+        "label": "Sıcaklık Aralığı",
+        "value": "0–100°C"
+      },
+      {
+        "label": "Sensör Tipi",
+        "value": "Polarografik"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital ekran"
+      }
+    ],
+    "usageAreas": [
+      "Çevresel Su Analizi",
+      "Mikrobiyoloji (Oksijen Takibi)",
+      "Kalite Kontrol"
+    ],
+    "relatedProductSlugs": [
+      "dlab-ph-metre",
+      "dlab-uv-vis-spektrofotometre"
+    ]
+  },
+  {
+    "slug": "dlab-sk-o180-c",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB SK-O180-C Remote-Controlled Smart Destaining Shaker Orbital Çalkalayıcı Uzaktan Kumandalı 20 mm / 40-200 rpm / 2 kg",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-sk-o180-c.png",
+    "shortDescription": "Kablosuz uzaktan kumandalı, jel destaining ve yıkama işlemleri için akıllı orbital çalkalayıcı.",
+    "description": [
+      "SK-O180-C, özellikle jel destaining (boya giderme) ve Western Blot yıkama adımları gibi tekrarlayan çalkalama işlemleri için tasarlanmış akıllı bir orbital çalkalayıcıdır.",
+      "Kablosuz el kumandası üzerinden hız ve süre ayarları, cihaza fiziksel olarak dokunmadan uzaktan yapılabilir.",
+      "20 mm orbit çapı ve 40-200 rpm hız aralığı, hassas ve tutarlı bir çalkalama hareketi sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hız Aralığı",
+        "value": "40–200 rpm"
+      },
+      {
+        "label": "Orbit Çapı",
+        "value": "20 mm"
+      },
+      {
+        "label": "Maksimum Yük",
+        "value": "2 kg"
+      },
+      {
+        "label": "Kontrol",
+        "value": "Kablosuz uzaktan kumanda"
+      }
+    ],
+    "usageAreas": [
+      "Jel Destaining (Boya Giderme)",
+      "Western Blot Yıkama",
+      "Genel Çalkalama İşlemleri"
+    ],
+    "relatedProductSlugs": [
+      "dlab-sk-l180-s",
+      "dlab-orbital-calkalayici",
+      "dlab-elektroforez-guc-kaynagi",
+      "agaroz"
+    ]
+  },
+  {
+    "slug": "dlab-sk-l180-s",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB SK-L180-S Intelligent Renk Giderici Doğrusal Çalkalayıcı 20 mm / 40-200 rpm / 2 kg",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-sk-l180-s.png",
+    "shortDescription": "Doğrusal (ileri-geri) hareketle çalışan, jel destaining ve yıkama işlemleri için akıllı çalkalayıcı.",
+    "description": [
+      "SK-L180-S, SK-O180-C'nin dairesel (orbital) hareketinin aksine doğrusal (ileri-geri) hareketle çalışan, jel destaining ve yıkama işlemleri için tasarlanmış akıllı bir çalkalayıcıdır.",
+      "Doğrusal hareket, özellikle hassas jel/membran yüzeylerde daha yumuşak ve kontrollü bir çalkalama sağlar.",
+      "20 mm hareket mesafesi ve 40-200 rpm hız aralığı, tutarlı ve tekrarlanabilir sonuçlar sunar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hız Aralığı",
+        "value": "40–200 rpm"
+      },
+      {
+        "label": "Hareket Tipi",
+        "value": "Doğrusal (ileri-geri)"
+      },
+      {
+        "label": "Hareket Mesafesi",
+        "value": "20 mm"
+      },
+      {
+        "label": "Maksimum Yük",
+        "value": "2 kg"
+      }
+    ],
+    "usageAreas": [
+      "Jel Destaining (Boya Giderme)",
+      "Western Blot Yıkama",
+      "Hassas Membran Yıkama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-sk-o180-c",
+      "dlab-orbital-calkalayici",
+      "agaroz"
+    ]
+  },
+  {
+    "slug": "dlab-thermal-cycler",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "PCR Sistemleri",
+    "name": "DLAB TC2000-G3 Thermal Cycler Gradyan Termal Döngüleyici 96×0.2 mL PCR Tüpü | 12×PCR-8 Şerit",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-thermal-cycler.png",
+    "shortDescription": "Dokunmatik ekranlı, üç bağımsız ısıtma bloklu, gradyan sıcaklık özellikli gelişmiş PCR termal döngüleyici.",
+    "description": [
+      "TC2000-G3, dokunmatik renkli ekran üzerinden program oluşturma, kaydetme ve izleme imkanı sunan, gelişmiş bir gradyan termal döngüleyicidir.",
+      "Üç bağımsız ısıtma bloğu, aynı anda farklı sıcaklık profillerinde üç ayrı PCR çalışmasının paralel yürütülmesine olanak tanır.",
+      "96×0.2 mL PCR tüpü veya 12×PCR-8 şerit kapasiteli blok seçenekleriyle farklı numune formatlarına uyum sağlar; gradyan fonksiyonu primer optimizasyonunu kolaylaştırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Blok Kapasitesi",
+        "value": "96 × 0.2 mL PCR tüpü veya 12 × PCR-8 şerit"
+      },
+      {
+        "label": "Blok Sayısı",
+        "value": "3 bağımsız ısıtma bloğu"
+      },
+      {
+        "label": "Gradyan Fonksiyonu",
+        "value": "Var (primer optimizasyonu için)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dokunmatik renkli ekran"
+      }
+    ],
+    "usageAreas": [
+      "Standart PCR",
+      "Gradyan Optimizasyonu",
+      "Paralel Çoklu Program Çalıştırma",
+      "Genotipleme"
+    ],
+    "relatedProductSlugs": [
+      "dlab-tc2000-g1",
+      "dlab-tc2000-g2",
+      "pcr-master-mix",
+      "dlab-dry-bath",
+      "taq-dna-polimeraz"
+    ]
+  },
+  {
+    "slug": "dlab-tc2000-g2",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "PCR Sistemleri",
+    "name": "DLAB TC2000-G2 Thermal Cycler Gradyan Termal Döngüleyici 96×0.2 mL PCR Tüpü | 12×PCR-8 Şerit",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-tc2000-g2.png",
+    "shortDescription": "Dokunmatik ekranlı, iki bağımsız ısıtma bloklu, gradyan sıcaklık özellikli PCR termal döngüleyici.",
+    "description": [
+      "TC2000-G2, dokunmatik renkli ekran üzerinden program oluşturma, kaydetme ve izleme imkanı sunan bir gradyan termal döngüleyicidir.",
+      "TC2000-G3'ün üç bloklu yapısına göre daha kompakt bir alternatif olarak iki bağımsız ısıtma bloğu sunar; aynı anda iki farklı sıcaklık profilinde çalışmaya imkan tanır.",
+      "96×0.2 mL PCR tüpü veya 12×PCR-8 şerit kapasiteli blok seçenekleriyle farklı numune formatlarına uyum sağlar; gradyan fonksiyonu primer optimizasyonunu kolaylaştırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Blok Kapasitesi",
+        "value": "96 × 0.2 mL PCR tüpü veya 12 × PCR-8 şerit"
+      },
+      {
+        "label": "Blok Sayısı",
+        "value": "2 bağımsız ısıtma bloğu"
+      },
+      {
+        "label": "Gradyan Fonksiyonu",
+        "value": "Var (primer optimizasyonu için)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dokunmatik renkli ekran"
+      }
+    ],
+    "usageAreas": [
+      "Standart PCR",
+      "Gradyan Optimizasyonu",
+      "Paralel İki Program Çalıştırma",
+      "Genotipleme"
+    ],
+    "relatedProductSlugs": [
+      "dlab-tc2000-g1",
+      "dlab-thermal-cycler",
+      "pcr-master-mix",
+      "taq-dna-polimeraz"
+    ]
+  },
+  {
+    "slug": "dlab-tc2000-g1",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "PCR Sistemleri",
+    "name": "DLAB TC2000-G1 Thermal Cycler Gradyan Termal Döngüleyici 96×0.2 mL PCR Tüpü | 12×PCR-8 Şerit | 1×0.2 mL 96 Kuyulu PCR Plakası",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-tc2000-g1.png",
+    "shortDescription": "Dokunmatik ekranlı, tek bloklu, gradyan sıcaklık özellikli, PCR plakası uyumlu kompakt termal döngüleyici.",
+    "description": [
+      "TC2000-G1, TC2000 serisinin tek bloklu ve en kompakt üyesidir; dokunmatik renkli ekran üzerinden program oluşturma, kaydetme ve izleme imkanı sunar.",
+      "96×0.2 mL PCR tüpü, 12×PCR-8 şerit veya 1×0.2 mL 96 kuyulu PCR plakası kapasiteli blok seçenekleriyle en geniş numune formatı desteğine sahiptir.",
+      "Gradyan fonksiyonu, tek bir çalışmada farklı bağlanma sıcaklıklarının test edilmesine olanak tanıyarak primer optimizasyonunu kolaylaştırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Blok Kapasitesi",
+        "value": "96 × 0.2 mL PCR tüpü / 12 × PCR-8 şerit / 1 × 96 kuyulu PCR plakası"
+      },
+      {
+        "label": "Blok Sayısı",
+        "value": "1 ısıtma bloğu"
+      },
+      {
+        "label": "Gradyan Fonksiyonu",
+        "value": "Var (primer optimizasyonu için)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dokunmatik renkli ekran"
+      }
+    ],
+    "usageAreas": [
+      "Standart PCR",
+      "Gradyan Optimizasyonu",
+      "96 Kuyulu Plaka Uygulamaları",
+      "Genotipleme"
+    ],
+    "relatedProductSlugs": [
+      "dlab-tc2000-g2",
+      "dlab-thermal-cycler",
+      "pcr-master-mix"
+    ]
+  },
+  {
+    "slug": "dlab-dhp4-550",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DHP4-550 LCD Isıtıcı Tabla Hot Plate RT-550 °C / 100 x 100 mm",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dhp4-550.png",
+    "shortDescription": "Manyetik karıştırma özelliği olmayan, yalnızca ısıtma yapan, geniş sıcaklık aralıklı LCD ekranlı ısıtıcı tabla.",
+    "description": [
+      "DHP4-550, manyetik karıştırma gerektirmeyen, yalnızca kontrollü ısıtma ihtiyacı olan uygulamalar için tasarlanmış bir ısıtıcı tabladır (hot plate).",
+      "100×100 mm ısıtma yüzeyi ve oda sıcaklığından 550°C'ye kadar geniş sıcaklık aralığı, farklı kap boyutları ve ısıtma ihtiyaçlarına uygundur.",
+      "Dijital LCD ekran üzerinden sıcaklık ve süre kolayca ayarlanıp izlenebilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Sıcaklık Aralığı",
+        "value": "Oda sıcaklığı – 550°C"
+      },
+      {
+        "label": "Isıtma Yüzeyi",
+        "value": "100 × 100 mm"
+      },
+      {
+        "label": "Karıştırma Fonksiyonu",
+        "value": "Yok (yalnızca ısıtma)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital LCD ekran"
+      }
+    ],
+    "usageAreas": [
+      "Numune Isıtma",
+      "Çözelti Hazırlama",
+      "Buharlaştırma"
+    ],
+    "relatedProductSlugs": [
+      "dlab-ms7-h550-s-set2",
+      "dlab-ms-h-proa-set2",
+      "dlab-dry-bath"
+    ]
+  },
+  {
+    "slug": "dlab-dpette-plus-8ch-15-300ul",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Sıvı Transfer Cihazları",
+    "name": "DLAB dPette⁺ 8 Kanallı Elektronik Pipet Dijital Ekranlı (15-300 µL)",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dpette-plus-8ch-15-300ul.png",
+    "shortDescription": "8 kanallı, dijital ekranlı, 15-300 µL hacim aralığında programlanabilir elektronik pipet.",
+    "description": [
+      "dPette⁺, 8 kanallı yapısı sayesinde mikroplaka (96 kuyucuk) uygulamalarında tek seferde çoklu pipetleme yaparak iş akışını hızlandıran bir elektronik pipettir.",
+      "Dijital ekran üzerinden hacim ayarı ve pipetleme modu (tekli aspirasyon, tekrarlı dağıtım, seyreltme) kolayca seçilebilir.",
+      "Motorlu piston hareketi, tüm kanallarda tutarlı ve tekrarlanabilir hacim doğruluğu sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kanal Sayısı",
+        "value": "8 kanal"
+      },
+      {
+        "label": "Hacim Aralığı",
+        "value": "15–300 µL"
+      },
+      {
+        "label": "Çalışma Prensibi",
+        "value": "Elektronik (motorlu)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dijital ekran"
+      }
+    ],
+    "usageAreas": [
+      "Mikroplaka Uygulamaları (96 Kuyucuk)",
+      "ELISA Kurulumu",
+      "Yüksek Verimli Numune Hazırlama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-e-pette-elektronik-pipet",
+      "dlab-hipette-mikropipet",
+      "dlab-pipet-kontrolori"
+    ]
+  },
+  {
+    "slug": "dlab-dl-zy04",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DL-ZY04 Transfer Elektroforez Tankı",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dl-zy04.png",
+    "shortDescription": "Western Blot transfer işlemleri için elektrot kaseti, dökme plakaları ve soğutma bloğu dahil komple tank sistemi.",
+    "description": [
+      "DL-ZY04, jel elektroforezi sonrası proteinlerin membrana transfer edilmesi (Western Blot transfer adımı) için kullanılan bir ıslak transfer tankı sistemidir.",
+      "Sete dahil elektrot kaseti, jel/membran dökme plakaları ve soğutma bloğu, transfer işlemi sırasında ısı birikimini kontrol altında tutarak tutarlı sonuçlar elde edilmesini sağlar.",
+      "Şeffaf tank gövdesi, transfer sürecinin görsel olarak izlenmesine olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kullanım Amacı",
+        "value": "Islak transfer (Western Blot)"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Elektrot kaseti, dökme plakaları, soğutma bloğu"
+      },
+      {
+        "label": "Tank Gövdesi",
+        "value": "Şeffaf"
+      }
+    ],
+    "usageAreas": [
+      "Western Blot Transfer",
+      "Protein Elektroforezi Sonrası İşlemler"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-zy03",
+      "dlab-elektroforez-guc-kaynagi",
+      "dlab-sk-o180-c",
+      "dlab-sk-l180-s"
+    ]
+  },
+  {
+    "slug": "dlab-dl-zy03",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DL-ZY03 Transfer Elektroforez Tankı",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dl-zy03.png",
+    "shortDescription": "Jel döküm kaseti, elektrot modülü ve soğutma bloğu dahil, Western Blot transfer işlemleri için tank sistemi.",
+    "description": [
+      "DL-ZY03, jel elektroforezi sonrası proteinlerin membrana transfer edilmesi (Western Blot transfer adımı) için kullanılan bir ıslak transfer tankı sistemidir.",
+      "DL-ZY04'ten farklı bir jel döküm kaseti tasarımına sahiptir; sete dahil elektrot modülü ve soğutma bloğu, transfer sırasında tutarlı ve kontrollü sonuçlar sağlar.",
+      "Şeffaf tank gövdesi, transfer sürecinin görsel olarak izlenmesine olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kullanım Amacı",
+        "value": "Islak transfer (Western Blot)"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Jel döküm kaseti, elektrot modülü, soğutma bloğu"
+      },
+      {
+        "label": "Tank Gövdesi",
+        "value": "Şeffaf"
+      }
+    ],
+    "usageAreas": [
+      "Western Blot Transfer",
+      "Jel Döküm ve Elektroforez",
+      "Protein Elektroforezi Sonrası İşlemler"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-zy04",
+      "dlab-elektroforez-guc-kaynagi",
+      "agaroz"
+    ]
+  },
+  {
+    "slug": "dlab-dl-sub03",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DL-SUB03 Çok Fonksiyonlu Yatay Elektroforez Tankı",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dl-sub03.png",
+    "shortDescription": "Değiştirilebilir jel döküm tepsileri ve çoklu tarak seçenekleriyle, agaroz jel elektroforezi için yatay (submarine tip) tank.",
+    "description": [
+      "DL-SUB03, DNA/RNA fragmanlarının agaroz jel elektroforeziyle ayrıştırılması için kullanılan, yatay (submarine tip) bir elektroforez tankıdır.",
+      "Farklı jel boyutlarına uygun değiştirilebilir döküm tepsileri ve çok sayıda kuyucuklu tarak seçenekleri, farklı numune sayısı ve deney ihtiyaçlarına esneklik sağlar.",
+      "Şeffaf tank gövdesi, elektroforez sürecinin görsel olarak izlenmesine olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kullanım Amacı",
+        "value": "Agaroz jel elektroforezi (yatay/submarine tip)"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Değiştirilebilir döküm tepsileri, çoklu tarak seçenekleri"
+      },
+      {
+        "label": "Tank Gövdesi",
+        "value": "Şeffaf"
+      }
+    ],
+    "usageAreas": [
+      "DNA/RNA Fragman Ayrıştırma",
+      "Jel Elektroforezi",
+      "PCR Ürünü Doğrulama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-sub02",
+      "dlab-elektroforez-guc-kaynagi",
+      "agaroz",
+      "sybr-green"
+    ]
+  },
+  {
+    "slug": "dlab-dl-sub02",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DL-SUB02 Çok Fonksiyonlu Yatay Elektroforez Tankı",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dl-sub02.png",
+    "shortDescription": "Değiştirilebilir jel döküm tepsileri ve tarak seçenekleriyle, agaroz jel elektroforezi için kompakt yatay tank.",
+    "description": [
+      "DL-SUB02, DNA/RNA fragmanlarının agaroz jel elektroforeziyle ayrıştırılması için kullanılan, DL-SUB03'e göre daha kompakt bir yatay (submarine tip) elektroforez tankıdır.",
+      "Sete dahil çoklu döküm tepsisi ve tarak seçenekleri, farklı numune sayısı ve jel boyutu ihtiyaçlarına uyum sağlar.",
+      "Şeffaf tank gövdesi, elektroforez sürecinin görsel olarak izlenmesine olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kullanım Amacı",
+        "value": "Agaroz jel elektroforezi (yatay/submarine tip)"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Çoklu döküm tepsisi, tarak seçenekleri"
+      },
+      {
+        "label": "Tank Gövdesi",
+        "value": "Şeffaf"
+      }
+    ],
+    "usageAreas": [
+      "DNA/RNA Fragman Ayrıştırma",
+      "Jel Elektroforezi",
+      "PCR Ürünü Doğrulama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-sub03",
+      "dlab-elektroforez-guc-kaynagi",
+      "agaroz"
+    ]
+  },
+  {
+    "slug": "dlab-dl-mini04",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DL-Mini04 Dikey Elektroforez Tankı",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dl-mini04.png",
+    "shortDescription": "Cam plaka, ayırıcı ve tarak seti dahil, protein jel elektroforezi (SDS-PAGE) için dikey tank sistemi.",
+    "description": [
+      "DL-Mini04, protein örneklerinin poliakrilamid jel elektroforeziyle (SDS-PAGE) ayrıştırılması için kullanılan dikey bir elektroforez tankıdır.",
+      "Sete dahil cam plakalar, ayırıcılar (spacer) ve kuyucuklu taraklar, jelin dökülmesinden numune yüklemeye kadar tüm süreci destekler.",
+      "Şeffaf tank gövdesi, elektroforez sürecinin görsel olarak izlenmesine olanak tanır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kullanım Amacı",
+        "value": "Protein jel elektroforezi (SDS-PAGE, dikey)"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Cam plakalar, ayırıcılar (spacer), taraklar"
+      },
+      {
+        "label": "Tank Gövdesi",
+        "value": "Şeffaf"
+      }
+    ],
+    "usageAreas": [
+      "Protein Elektroforezi (SDS-PAGE)",
+      "Western Blot Öncesi Jel Hazırlama"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-mini01",
+      "dlab-dl-zy03",
+      "dlab-dl-zy04",
+      "dlab-elektroforez-guc-kaynagi"
+    ]
+  },
+  {
+    "slug": "dlab-dl-mini01",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DL-Mini01 Dikey Elektroforez Tankı (Çift Plaka)",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-dl-mini01.png",
+    "shortDescription": "Çift döküm kaseti desteğiyle aynı anda iki jel hazırlanabilen, protein jel elektroforezi için dikey tank sistemi.",
+    "description": [
+      "DL-Mini01, protein örneklerinin poliakrilamid jel elektroforeziyle (SDS-PAGE) ayrıştırılması için kullanılan, çift plaka (döküm kaseti) desteğine sahip dikey bir elektroforez tankıdır.",
+      "İki bağımsız döküm kaseti sayesinde tek tankta aynı anda iki farklı jel hazırlanıp çalıştırılabilir, bu da verimliliği artırır.",
+      "Sete dahil cam plakalar, taraklar ve tarak/plaka standı ile jel hazırlıktan yüklemeye kadar tüm süreç desteklenir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Kullanım Amacı",
+        "value": "Protein jel elektroforezi (SDS-PAGE, dikey)"
+      },
+      {
+        "label": "Döküm Kaseti Sayısı",
+        "value": "2 (çift plaka)"
+      },
+      {
+        "label": "Set İçeriği",
+        "value": "Cam plakalar, taraklar, plaka standı"
+      }
+    ],
+    "usageAreas": [
+      "Protein Elektroforezi (SDS-PAGE)",
+      "Western Blot Öncesi Jel Hazırlama",
+      "Paralel Çift Jel Çalıştırma"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-mini04",
+      "dlab-dl-zy03",
+      "dlab-elektroforez-guc-kaynagi"
+    ]
+  },
+  {
+    "slug": "dlab-elektroforez-guc-kaynagi",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Numune Hazırlama Cihazları",
+    "name": "DLAB DEP-600 Elektroforez Güç Kaynağı",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-elektroforez-guc-kaynagi.png",
+    "shortDescription": "Dokunmatik renkli ekranlı, çift çıkışlı, gerçek zamanlı voltaj/akım/sıcaklık izlemeli elektroforez güç kaynağı.",
+    "description": [
+      "DEP-600, agaroz veya poliakrilamid jel elektroforezi sistemlerine kontrollü voltaj ve akım sağlayan, dokunmatik renkli ekranlı bir güç kaynağıdır.",
+      "Çift çıkış bağlantı noktası, aynı anda iki farklı elektroforez tankının bağlanıp çalıştırılmasına imkan tanır.",
+      "Ekranda voltaj, akım (mA), güç (W) ve sıcaklık değerleri gerçek zamanlı görüntülenir; sabit voltaj, sabit akım veya sabit güç modlarında çalıştırılabilir."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Çıkış Sayısı",
+        "value": "Çift çıkış (2 kanal)"
+      },
+      {
+        "label": "Çalışma Modu",
+        "value": "Sabit Voltaj / Sabit Akım / Sabit Güç"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dokunmatik renkli ekran (voltaj/akım/güç/sıcaklık eş zamanlı)"
+      }
+    ],
+    "usageAreas": [
+      "Jel Elektroforezi",
+      "DNA/RNA Fragman Ayrıştırma",
+      "Protein Elektroforezi",
+      "Western Blot Transfer"
+    ],
+    "relatedProductSlugs": [
+      "dlab-dl-sub03",
+      "dlab-dl-zy04",
+      "dlab-dl-mini01"
+    ]
+  },
+  {
+    "slug": "dlab-tc1000-g-pro",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "PCR Sistemleri",
+    "name": "DLAB TC1000-G-Pro Thermocycler Termal Döngüleyici Gradyan",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-tc1000-g-pro.png",
+    "shortDescription": "96 kuyulu plaka kapasiteli, dokunmatik ekranlı, gradyan sıcaklık özellikli tek bloklu termal döngüleyici.",
+    "description": [
+      "TC1000-G-Pro, TC2000 serisinden farklı bir ürün ailesi olan, 96 kuyulu plaka kapasiteli tek bloklu bir gradyan termal döngüleyicidir.",
+      "Dokunmatik ekran üzerinde anlık sıcaklık ve kalan süre bilgisi net bir gösterge ile sunulur; program başlatma ve durdurma işlemleri tek dokunuşla yapılabilir.",
+      "Gradyan fonksiyonu, tek bir çalışmada farklı bağlanma sıcaklıklarının test edilmesine olanak tanıyarak primer optimizasyonunu kolaylaştırır."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Blok Kapasitesi",
+        "value": "96 kuyulu PCR plakası"
+      },
+      {
+        "label": "Blok Sayısı",
+        "value": "1 ısıtma bloğu"
+      },
+      {
+        "label": "Gradyan Fonksiyonu",
+        "value": "Var (primer optimizasyonu için)"
+      },
+      {
+        "label": "Ekran",
+        "value": "Dokunmatik renkli ekran"
+      }
+    ],
+    "usageAreas": [
+      "Standart PCR",
+      "Gradyan Optimizasyonu",
+      "96 Kuyulu Plaka Uygulamaları",
+      "Genotipleme"
+    ],
+    "relatedProductSlugs": [
+      "dlab-tc2000-g1",
+      "dlab-thermal-cycler",
+      "pcr-master-mix"
+    ]
+  },
+  {
+    "slug": "dlab-vorteks-mikser",
+    "category": "Laboratuvar Cihazları",
+    "subCategory": "Karıştırma ve Çalkalama Cihazları",
+    "name": "DLAB MX-S Vorteks 100-3.000 rpm Ayarlanabilir Hız Kontrollü",
+    "brand": "DLAB",
+    "imageUrl": "/uploads/products/dlab-vorteks-mikser.png",
+    "shortDescription": "100-3.000 rpm ayarlanabilir hız kontrollü, dokunmatik ve sürekli çalışma modlu masaüstü vorteks.",
+    "description": [
+      "MX-S, tüp içindeki numunelerin hızlı dairesel hareketle homojenize edilmesi için kullanılan kompakt bir vorteks mikserdir.",
+      "Döner düğme ile 100-3.000 rpm aralığında hassas hız ayarı yapılabilir; dokunmatik (touch) ve sürekli çalışma modları arasında geçiş yapılabilir.",
+      "Kauçuk kap başlığı, farklı tüp boyutlarıyla güvenli ve dengeli temas sağlar."
+    ],
+    "technicalSpecs": [
+      {
+        "label": "Hız Aralığı",
+        "value": "100–3.000 rpm"
+      },
+      {
+        "label": "Çalışma Modu",
+        "value": "Dokunmatik (touch) / Sürekli"
+      },
+      {
+        "label": "Kontrol",
+        "value": "Döner düğme ile ayarlanabilir hız"
+      }
+    ],
+    "usageAreas": [
+      "Numune Homojenizasyonu",
+      "Reaktif Karıştırma",
+      "DNA/RNA İzolasyonu Ön Hazırlık"
+    ],
+    "relatedProductSlugs": [
+      "dlab-mikro-santrifuj",
+      "dna-izolasyon-kiti",
+      "mikrosantrifuj-tup-1-5ml"
+    ]
+  }
+]

@@ -1,0 +1,450 @@
+// CoreGen Biyoteknoloji — Prisma Şeması (v1)
+// ============================================================================
+// Bu şema, "Bağımsız Mimari Değerlendirme" raporunda kararlaştırılan
+// ilkelere göre tasarlanmıştır:
+//   - Kategoriler tek polimorfik tablo yerine Product/Service/Blog için
+//     AYRI tablolar (ProductCategory / ServiceCategory / BlogCategory).
+//   - QuoteItem için productId/serviceId'den yalnızca birinin dolu
+//     olmasını zorlayan DB seviyesinde CHECK kısıtı — Prisma'nın stabil
+//     sürümü schema.prisma içinde native CHECK syntax'ı desteklemediği
+//     için bu kısıt, ilk migration'a EKLENECEK bir sonradan-SQL adımı
+//     olarak `prisma/migrations/.../migration.sql` içine elle eklenmelidir
+//     (bkz. dosya sonundaki not).
+//   - Product/Service silme işlemleri soft-delete (ContentStatus.ARCHIVED)
+//     ile yapılır; QuoteItem üzerinde isim/kategori anlık görüntüsü
+//     (snapshot) tutularak geçmiş teklif kayıtları ürün silinse/adı
+//     değişse bile doğru okunabilir.
+//   - Medya, ayrı bir polimorfik tablo yerine doğrudan ilgili modelin
+//     üzerinde basit bir `imageUrl` alanı olarak tutulur — bu, admin
+//     panelindeki gerçek dosya-tabanlı görsel yükleme sisteminin
+//     (public/uploads/...) birebir karşılığıdır, over-engineering'den
+//     kaçınmak için bilinçli bir sadeleştirmedir.
+// ============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// ORTAK ENUM'LAR
+// ============================================================================
+
+/// İçerik yayın durumu — Bağımsız Mimari Değerlendirme'deki "içerik
+/// bilimsel onayı" ilkesine göre SCIENTIFIC_REVIEW aşaması dahil edildi.
+enum ContentStatus {
+  DRAFT
+  SCIENTIFIC_REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum AdminRole {
+  SUPER_ADMIN
+  EDITOR
+  SUPPORT
+}
+
+enum QuoteStatus {
+  BEKLIYOR
+  HAZIRLANIYOR
+  GONDERILDI
+  TAMAMLANDI
+  IPTAL_EDILDI
+}
+
+enum ApplicationStatus {
+  YENI
+  INCELENIYOR
+  MULAKAT
+  REDDEDILDI
+  ISE_ALINDI
+}
+
+// ============================================================================
+// ADMIN / KULLANICI
+// ============================================================================
+
+/// NextAuth.js entegrasyonu için hazır — şu an admin paneli
+/// ADMIN_EMAIL/ADMIN_PASSWORD ortam değişkenleriyle çalışıyor (geçici
+/// tek-kullanıcı çözümü). Bu tablo, gerçek çoklu-kullanıcı/rol geçişi
+/// yapıldığında kullanılacak.
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  name         String
+  role         AdminRole @default(EDITOR)
+  isActive     Boolean   @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  assignedQuotes Quote[]       @relation("AssignedAdmin")
+  activityLogs   ActivityLog[]
+
+  @@map("users")
+}
+
+model ActivityLog {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  action     String
+  entityType String
+  entityId   String
+  metadata   Json?
+  createdAt  DateTime @default(now())
+
+  @@index([userId])
+  @@map("activity_logs")
+}
+
+// ============================================================================
+// ÜRÜNLER
+// ============================================================================
+
+model ProductCategory {
+  id            String    @id @default(cuid())
+  slug          String    @unique
+  name          String
+  description   String
+  subCategories String[]
+  sortOrder     Int       @default(0)
+  products      Product[]
+
+  @@map("product_categories")
+}
+
+model Product {
+  id               String        @id @default(cuid())
+  slug             String        @unique
+  name             String
+  /// Yalnızca yetkili bayilik ilişkisi olan markalar için doldurulur
+  /// (ör. DLAB). Boşsa arayüzde marka gösterilmez.
+  brand            String?
+  subCategory      String
+  imageUrl         String?
+  shortDescription String
+  description      String[]
+  /// { label: string, value: string }[]
+  technicalSpecs   Json
+  usageAreas       String[]
+  status           ContentStatus @default(PUBLISHED)
+
+  categoryId String
+  category   ProductCategory @relation(fields: [categoryId], references: [id])
+
+  relatedProductSlugs String[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  quoteItems QuoteItem[]
+
+  @@index([categoryId])
+  @@index([status])
+  @@map("products")
+}
+
+// ============================================================================
+// HİZMETLER
+// ============================================================================
+
+model ServiceCategory {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  name        String
+  description String
+  sortOrder   Int       @default(0)
+  services    Service[]
+
+  @@map("service_categories")
+}
+
+model Service {
+  id               String        @id @default(cuid())
+  slug             String        @unique
+  name             String
+  heroDescription  String
+  description      String[]
+  applicationAreas String[]
+  subServices      String[]
+  workflowSteps    String[]
+  deliverables     String[]
+  advantages       String[]
+  suitableFor      String[]
+  status           ContentStatus @default(PUBLISHED)
+
+  categoryId String
+  category   ServiceCategory @relation(fields: [categoryId], references: [id])
+
+  faqs                ServiceFaq[]
+  relatedServiceSlugs String[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  quoteItems      QuoteItem[]
+  relatedBlogPosts BlogPost[]  @relation("BlogRelatedServices")
+
+  @@index([categoryId])
+  @@index([status])
+  @@map("services")
+}
+
+model ServiceFaq {
+  id        String  @id @default(cuid())
+  serviceId String
+  service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  question  String
+  answer    String
+  sortOrder Int     @default(0)
+
+  @@index([serviceId])
+  @@map("service_faqs")
+}
+
+// ============================================================================
+// BLOG
+// ============================================================================
+
+model BlogCategory {
+  id    String     @id @default(cuid())
+  slug  String     @unique
+  name  String
+  posts BlogPost[]
+
+  @@map("blog_categories")
+}
+
+model BlogPost {
+  id                     String        @id @default(cuid())
+  slug                   String        @unique
+  title                  String
+  excerpt                String
+  readingTimeMinutes     Int
+  /// { heading: string, paragraphs: string[] }[]
+  sections               Json
+  /// { title: string, headers: string[], rows: string[][] } | null
+  table                  Json?
+  infographicSuggestion  String
+  sources                String[]
+  status                 ContentStatus @default(PUBLISHED)
+  publishedAt            DateTime
+
+  categoryId String
+  category   BlogCategory @relation(fields: [categoryId], references: [id])
+
+  faqs             BlogFaq[]
+  relatedServices  Service[] @relation("BlogRelatedServices")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([status])
+  @@map("blog_posts")
+}
+
+model BlogFaq {
+  id         String   @id @default(cuid())
+  blogPostId String
+  blogPost   BlogPost @relation(fields: [blogPostId], references: [id], onDelete: Cascade)
+  question   String
+  answer     String
+  sortOrder  Int      @default(0)
+
+  @@index([blogPostId])
+  @@map("blog_faqs")
+}
+
+// ============================================================================
+// TEKLİF SEPETİ SİSTEMİ
+// ============================================================================
+
+model Quote {
+  id          String      @id @default(cuid())
+  quoteNumber String      @unique
+  firstName   String
+  lastName    String
+  institution String
+  department  String?
+  phone       String
+  email       String
+  city        String?
+  note        String?
+  kvkkConsent Boolean     @default(false)
+  status      QuoteStatus @default(BEKLIYOR)
+
+  assignedAdminId String?
+  assignedAdmin   User?   @relation("AssignedAdmin", fields: [assignedAdminId], references: [id])
+
+  items QuoteItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([email])
+  @@map("quotes")
+}
+
+/// productId/serviceId'den yalnızca biri dolu olmalıdır. Bu kural Prisma
+/// şemasında native olarak ifade edilemediği için ilk migration sonrası
+/// aşağıdaki SQL elle eklenmelidir (bkz. dosya sonu):
+///   ALTER TABLE quote_items ADD CONSTRAINT quote_item_product_xor_service
+///   CHECK ((product_id IS NOT NULL AND service_id IS NULL) OR
+///          (product_id IS NULL AND service_id IS NOT NULL));
+model QuoteItem {
+  id      String @id @default(cuid())
+  quoteId String
+  quote   Quote  @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+
+  productId String?
+  product   Product? @relation(fields: [productId], references: [id])
+
+  serviceId String?
+  service   Service? @relation(fields: [serviceId], references: [id])
+
+  /// Ürün/hizmet silinse veya adı değişse bile geçmiş teklif kaydının
+  /// doğru okunabilmesi için anlık görüntü (bkz. soft-delete kararı).
+  itemNameSnapshot String
+  categorySnapshot String
+
+  quantity Int     @default(1)
+  note     String?
+
+  @@index([quoteId])
+  @@map("quote_items")
+}
+
+// ============================================================================
+// KARİYER
+// ============================================================================
+
+model JobPosting {
+  id             String        @id @default(cuid())
+  slug           String        @unique
+  title          String
+  department     String
+  location       String
+  employmentType String
+  summary        String
+  description    String[]
+  requirements   String[]
+  status         ContentStatus @default(PUBLISHED)
+
+  applicants Applicant[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@map("job_postings")
+}
+
+model Applicant {
+  id           String  @id @default(cuid())
+  jobPostingId String?
+  jobPosting   JobPosting? @relation(fields: [jobPostingId], references: [id])
+
+  firstName   String
+  lastName    String
+  email       String
+  phone       String
+  /// public/uploads/cvs/... altında saklanan dosya yolu (bkz. ürün
+  /// görselleriyle aynı dosya-tabanlı kalıcılık deseni)
+  cvFileUrl   String?
+  coverNote   String?
+  kvkkConsent Boolean @default(false)
+  status      ApplicationStatus @default(YENI)
+
+  createdAt DateTime @default(now())
+
+  @@index([jobPostingId])
+  @@index([status])
+  @@map("applicants")
+}
+
+// ============================================================================
+// AYARLAR
+// ============================================================================
+
+model Setting {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+
+  @@map("settings")
+}
+
+// ============================================================================
+// GENEL İLETİŞİM MESAJLARI (Teklif dışı iletişim formu)
+// ============================================================================
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  fullName  String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("contact_messages")
+}
+
+// ============================================================================
+// TEKNİK SERVİS TALEPLERİ
+// ============================================================================
+
+enum ServiceRequestStatus {
+  YENI
+  KAYIT_OLUSTURULDU
+  KARGO_BEKLENIYOR
+  INCELENIYOR
+  TAMAMLANDI
+  IPTAL_EDILDI
+}
+
+model ServiceRequest {
+  id                String   @id @default(cuid())
+  requestNumber     String   @unique
+  fullName          String
+  institutionAndRole String
+  phone             String
+  address           String
+  invoiceDate       String?
+  deviceBrandModelSerial String
+  problemDescription String
+  accessoriesIncluded String
+  usedInMicrobiology Boolean
+  note              String?
+  status            ServiceRequestStatus @default(YENI)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@map("service_requests")
+}
+enum Role {
+  ADMIN
+  PERSONEL
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  adSoyad   String
+  role      Role     @default(PERSONEL)
+  isActive  Boolean  @default(true) // Hesap aktif mi / aktive edildi mi?
+  createdAt DateTime @default(now())
+}
